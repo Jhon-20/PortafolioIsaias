@@ -1,0 +1,2983 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    .gm-err-container {
+      height: 100%;
+      width: 100%;
+      display: table;
+      background-color: #e8eaed;
+      position: relative;
+      left: 0;
+      top: 0
+    }
+
+    .gm-err-content {
+      -webkit-border-radius: 1px;
+      -moz-border-radius: 1px;
+      border-radius: 1px;
+      padding-top: 0;
+      padding-left: 10%;
+      padding-right: 10%;
+      position: static;
+      vertical-align: middle;
+      display: table-cell
+    }
+
+    .gm-err-content a {
+      color: #3c4043
+    }
+
+    .gm-err-icon {
+      text-align: center
+    }
+
+    .gm-err-title {
+      margin: 5px;
+      margin-bottom: 20px;
+      color: #3c4043;
+      font-family: Roboto, Arial, sans-serif;
+      text-align: center;
+      font-size: 24px
+    }
+
+    .gm-err-message {
+      margin: 5px;
+      color: #3c4043;
+      font-family: Roboto, Arial, sans-serif;
+      text-align: center;
+      font-size: 12px
+    }
+
+    .gm-err-autocomplete {
+      padding-left: 20px;
+      background-repeat: no-repeat;
+      -webkit-background-size: 15px 15px;
+      -moz-background-size: 15px 15px;
+      background-size: 15px 15px
+    }
+
+    sentinel {}
+  </style>
+  <style>
+    .gm-style-moc {
+      background-color: rgba(0, 0, 0, .45);
+      pointer-events: none;
+      text-align: center;
+      -webkit-transition: opacity ease-in-out;
+      -o-transition: opacity ease-in-out;
+      transition: opacity ease-in-out
+    }
+
+    .gm-style-mot {
+      color: white;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 22px;
+      margin: 0;
+      position: relative;
+      top: 50%;
+      -moz-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%)
+    }
+
+    sentinel {}
+  </style>
+  <style>
+    .gm-style img {
+      max-width: none;
+    }
+
+    .gm-style {
+      font: 400 11px Roboto, Arial, sans-serif;
+      text-decoration: none;
+    }
+  </style>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="description" content="Name of your web site">
+  <meta name="author" content="Marketify">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Waxon | Home</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/plugins.css">
+  <link rel="stylesheet" type="text/css" href="css/colors.css">
+  <link rel="stylesheet" type="text/css" href="css/darkMode.css">
+  <link rel="stylesheet" type="text/css" href="css/rtl.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!--[if lt IE 9]> <script type="text/javascript" src="js/modernizr.custom.js"></script> <![endif]-->
+
+  <style>
+    .osSwitch {
+      position: relative;
+      display: inline-block;
+      width: 34px;
+      height: 15.3px
+    }
+
+    .osSwitch input {
+      opacity: 0;
+      width: 0;
+      height: 0
+    }
+
+    .osSlider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 34px;
+      background-color: #93a0b5;
+      transition: 0.4s
+    }
+
+    .osSlider:before {
+      position: absolute;
+      content: '';
+      height: 13px;
+      width: 13px;
+      left: 2px;
+      bottom: 1px;
+      border-radius: 50%;
+      background-color: white;
+      transition: 0.4s
+    }
+
+    input:checked+.sliderGreen {
+      background-color: #04d289
+    }
+
+    input:checked+.sliderRed {
+      background-color: #ff3b30
+    }
+
+    input:not(:checked)+.defaultGreen {
+      background-color: #04d289
+    }
+
+    input:checked+.osSlider:before {
+      transform: translateX(17px)
+    }
+  </style>
+  <style>
+    @font-face {
+      font-family: 'SegoeUI_online_security';
+      src: url(chrome-extension://llbcnfanfmjhpedaedhbcnpgeepdnnok/segoe-ui.woff);
+    }
+
+    @font-face {
+      font-family: 'SegoeUI_bold_online_security';
+      src: url(chrome-extension://llbcnfanfmjhpedaedhbcnpgeepdnnok/segoe-ui-bold.woff);
+    }
+  </style>
+  <style type="text/css">
+    @font-face {
+      font-family: Roboto;
+      src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf");
+    }
+  </style>
+  <script type="text/javascript" charset="UTF-8"
+    src="https://maps.googleapis.com/maps-api-v3/api/js/52/9/intl/es_ALL/common.js"></script>
+  <script type="text/javascript" charset="UTF-8"
+    src="https://maps.googleapis.com/maps-api-v3/api/js/52/9/intl/es_ALL/util.js"></script>
+  <script type="text/javascript" charset="UTF-8"
+    src="https://maps.googleapis.com/maps-api-v3/api/js/52/9/intl/es_ALL/map.js"></script>
+  <script type="text/javascript" charset="UTF-8"
+    src="https://maps.googleapis.com/maps-api-v3/api/js/52/9/intl/es_ALL/marker.js"></script>
+  <script type="text/javascript" charset="UTF-8"
+    src="https://maps.googleapis.com/maps-api-v3/api/js/52/9/intl/es_ALL/onion.js"></script>
+  <script type="text/javascript" charset="UTF-8"
+    src="https://maps.googleapis.com/maps-api-v3/api/js/52/9/intl/es_ALL/controls.js"></script>
+</head>
+
+<body>
+
+  <div class="waxon_tm_preloader loaded">
+    <div class="spinner_wrap">
+      <div class="spinner"></div>
+    </div>
+  </div>
+
+
+
+
+  <div class="waxon_tm_all_wrap" data-magic-cursor="show" data-color="cadetBlue">
+
+    <div class="waxon_tm_settings">
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"
+          x="0px" y="0px" viewBox="0 0 268.765 268.765" style="enable-background:new 0 0 268.765 268.765;"
+          xml:space="preserve" class="svg replaced-svg">
+          <g id="Settings">
+            <g>
+              <path style="fill-rule:evenodd;clip-rule:evenodd;"
+                d="M267.92,119.461c-0.425-3.778-4.83-6.617-8.639-6.617    c-12.315,0-23.243-7.231-27.826-18.414c-4.682-11.454-1.663-24.812,7.515-33.231c2.889-2.641,3.24-7.062,0.817-10.133    c-6.303-8.004-13.467-15.234-21.289-21.5c-3.063-2.458-7.557-2.116-10.213,0.825c-8.01,8.871-22.398,12.168-33.516,7.529    c-11.57-4.867-18.866-16.591-18.152-29.176c0.235-3.953-2.654-7.39-6.595-7.849c-10.038-1.161-20.164-1.197-30.232-0.08    c-3.896,0.43-6.785,3.786-6.654,7.689c0.438,12.461-6.946,23.98-18.401,28.672c-10.985,4.487-25.272,1.218-33.266-7.574    c-2.642-2.896-7.063-3.252-10.141-0.853c-8.054,6.319-15.379,13.555-21.74,21.493c-2.481,3.086-2.116,7.559,0.802,10.214    c9.353,8.47,12.373,21.944,7.514,33.53c-4.639,11.046-16.109,18.165-29.24,18.165c-4.261-0.137-7.296,2.723-7.762,6.597    c-1.182,10.096-1.196,20.383-0.058,30.561c0.422,3.794,4.961,6.608,8.812,6.608c11.702-0.299,22.937,6.946,27.65,18.415    c4.698,11.454,1.678,24.804-7.514,33.23c-2.875,2.641-3.24,7.055-0.817,10.126c6.244,7.953,13.409,15.19,21.259,21.508    c3.079,2.481,7.559,2.131,10.228-0.81c8.04-8.893,22.427-12.184,33.501-7.536c11.599,4.852,18.895,16.575,18.181,29.167    c-0.233,3.955,2.67,7.398,6.595,7.85c5.135,0.599,10.301,0.898,15.481,0.898c4.917,0,9.835-0.27,14.752-0.817    c3.897-0.43,6.784-3.786,6.653-7.696c-0.451-12.454,6.946-23.973,18.386-28.657c11.059-4.517,25.286-1.211,33.281,7.572    c2.657,2.89,7.047,3.239,10.142,0.848c8.039-6.304,15.349-13.534,21.74-21.494c2.48-3.079,2.13-7.559-0.803-10.213    c-9.353-8.47-12.388-21.946-7.529-33.524c4.568-10.899,15.612-18.217,27.491-18.217l1.662,0.043    c3.853,0.313,7.398-2.655,7.865-6.588C269.044,139.917,269.058,129.639,267.92,119.461z M134.595,179.491    c-24.718,0-44.824-20.106-44.824-44.824c0-24.717,20.106-44.824,44.824-44.824c24.717,0,44.823,20.107,44.823,44.824    C179.418,159.385,159.312,179.491,134.595,179.491z">
+              </path>
+            </g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+        </svg>
+        <a class="link" href="#"></a>
+      </div>
+      <div class="wrapper">
+        <span class="title">Unlimited Colors</span>
+        <ul class="colors">
+          <li><a class="blue" href="#"></a></li>
+          <li><a class="green" href="#"></a></li>
+          <li><a class="brown" href="#"></a></li>
+          <li><a class="pink" href="#"></a></li>
+          <li><a class="orange" href="#"></a></li>
+          <li class="bl"><a class="black" href="#"></a></li>
+          <li class="wh"><a class="white" href="#"></a></li>
+          <li><a class="purple" href="#"></a></li>
+          <li><a class="sky" href="#"></a></li>
+          <li><a class="cadetBlue" href="#"></a></li>
+          <li><a class="crimson" href="#"></a></li>
+          <li><a class="olive" href="#"></a></li>
+          <li><a class="red" href="#"></a></li>
+        </ul>
+        <span class="title">Magic Cursor</span>
+        <ul class="cursor">
+          <li><a class="showme show" href="#"></a></li>
+          <li><a class="hide" href="#"><svg xmlns="http://www.w3.org/2000/svg" id="Capa_1"
+                enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
+                class="svg replaced-svg">
+                <g>
+                  <path d="m451.002 183.574h29.997v84.853h-29.997z"
+                    transform="matrix(.707 -.707 .707 .707 -23.318 395.706)"></path>
+                  <path d="m271.002 3.574h29.997v84.853h-29.997z"
+                    transform="matrix(.707 -.707 .707 .707 51.241 215.706)"></path>
+                  <path d="m423.574 31.002h84.853v29.997h-84.853z"
+                    transform="matrix(.707 -.707 .707 .707 103.961 342.985)"></path>
+                  <path
+                    d="m42.422 512 150.458-150.458 42.114 125.464 152.988-362.988-362.988 152.988 125.464 42.114-150.458 150.458z">
+                  </path>
+                  <path d="m361 0h30v61h-30z"></path>
+                  <path d="m451 121h61v30h-61z"></path>
+                </g>
+              </svg></a></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="waxon_tm_modalbox_news">
+      <div class="box_inner">
+        <div class="close">
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+              id="Capa_1" x="0px" y="0px" viewBox="0 0 511.995 511.995"
+              style="enable-background:new 0 0 511.995 511.995;" xml:space="preserve" class="svg replaced-svg">
+              <g>
+                <g>
+                  <path
+                    d="M437.126,74.939c-99.826-99.826-262.307-99.826-362.133,0C26.637,123.314,0,187.617,0,256.005    s26.637,132.691,74.993,181.047c49.923,49.923,115.495,74.874,181.066,74.874s131.144-24.951,181.066-74.874    C536.951,337.226,536.951,174.784,437.126,74.939z M409.08,409.006c-84.375,84.375-221.667,84.375-306.042,0    c-40.858-40.858-63.37-95.204-63.37-153.001s22.512-112.143,63.37-153.021c84.375-84.375,221.667-84.355,306.042,0    C493.435,187.359,493.435,324.651,409.08,409.006z">
+                  </path>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <path
+                    d="M341.525,310.827l-56.151-56.071l56.151-56.071c7.735-7.735,7.735-20.29,0.02-28.046    c-7.755-7.775-20.31-7.755-28.065-0.02l-56.19,56.111l-56.19-56.111c-7.755-7.735-20.31-7.755-28.065,0.02    c-7.735,7.755-7.735,20.31,0.02,28.046l56.151,56.071l-56.151,56.071c-7.755,7.735-7.755,20.29-0.02,28.046    c3.868,3.887,8.965,5.811,14.043,5.811s10.155-1.944,14.023-5.792l56.19-56.111l56.19,56.111    c3.868,3.868,8.945,5.792,14.023,5.792c5.078,0,10.175-1.944,14.043-5.811C349.28,331.117,349.28,318.562,341.525,310.827z">
+                  </path>
+                </g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+            </svg></a>
+        </div>
+        <div class="description_wrap"></div>
+      </div>
+    </div>
+
+
+    <div class="waxon_tm_modalbox_about">
+      <div class="box_inner">
+        <div class="close">
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+              id="Capa_1" x="0px" y="0px" viewBox="0 0 511.995 511.995"
+              style="enable-background:new 0 0 511.995 511.995;" xml:space="preserve" class="svg replaced-svg">
+              <g>
+                <g>
+                  <path
+                    d="M437.126,74.939c-99.826-99.826-262.307-99.826-362.133,0C26.637,123.314,0,187.617,0,256.005    s26.637,132.691,74.993,181.047c49.923,49.923,115.495,74.874,181.066,74.874s131.144-24.951,181.066-74.874    C536.951,337.226,536.951,174.784,437.126,74.939z M409.08,409.006c-84.375,84.375-221.667,84.375-306.042,0    c-40.858-40.858-63.37-95.204-63.37-153.001s22.512-112.143,63.37-153.021c84.375-84.375,221.667-84.355,306.042,0    C493.435,187.359,493.435,324.651,409.08,409.006z">
+                  </path>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <path
+                    d="M341.525,310.827l-56.151-56.071l56.151-56.071c7.735-7.735,7.735-20.29,0.02-28.046    c-7.755-7.775-20.31-7.755-28.065-0.02l-56.19,56.111l-56.19-56.111c-7.755-7.735-20.31-7.755-28.065,0.02    c-7.735,7.755-7.735,20.31,0.02,28.046l56.151,56.071l-56.151,56.071c-7.755,7.735-7.755,20.29-0.02,28.046    c3.868,3.887,8.965,5.811,14.043,5.811s10.155-1.944,14.023-5.792l56.19-56.111l56.19,56.111    c3.868,3.868,8.945,5.792,14.023,5.792c5.078,0,10.175-1.944,14.043-5.811C349.28,331.117,349.28,318.562,341.525,310.827z">
+                  </path>
+                </g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+            </svg></a>
+        </div>
+        <div class="description_wrap">
+          <div class="my_box">
+            <div class="left">
+              <div class="about_title">
+                <h3>Programming Skills</h3>
+              </div>
+              <div class="waxon_progress">
+                <div class="progress_inner" data-value="95">
+                  <span><span class="label">Wordpress &amp; PHP</span><span class="number">95%</span></span>
+                  <div class="background">
+                    <div class="bar open">
+                      <div class="bar_in" style="width: 95%;"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="progress_inner" data-value="80">
+                  <span><span class="label">Javascript &amp; React</span><span class="number">80%</span></span>
+                  <div class="background">
+                    <div class="bar open">
+                      <div class="bar_in" style="width: 80%;"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="progress_inner" data-value="90">
+                  <span><span class="label">HTML &amp; CSS</span><span class="number">90%</span></span>
+                  <div class="background">
+                    <div class="bar open">
+                      <div class="bar_in" style="width: 90%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="right">
+              <div class="about_title">
+                <h3>Language Skills</h3>
+              </div>
+              <div class="waxon_progress">
+                <div class="progress_inner" data-value="95">
+                  <span><span class="label">English</span><span class="number">95%</span></span>
+                  <div class="background">
+                    <div class="bar open">
+                      <div class="bar_in" style="width: 95%;"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="progress_inner" data-value="90">
+                  <span><span class="label">Japanese</span><span class="number">90%</span></span>
+                  <div class="background">
+                    <div class="bar open">
+                      <div class="bar_in" style="width: 90%;"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="progress_inner" data-value="85">
+                  <span><span class="label">Arabian</span><span class="number">85%</span></span>
+                  <div class="background">
+                    <div class="bar open">
+                      <div class="bar_in" style="width: 85%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="counter">
+            <div class="about_title">
+              <h3>Fun Facts</h3>
+            </div>
+            <ul>
+              <li>
+                <div class="list_inner">
+                  <h3>777+</h3>
+                  <span>Projects Completed</span>
+                </div>
+              </li>
+              <li>
+                <div class="list_inner">
+                  <h3>3K+</h3>
+                  <span>Happy Clients</span>
+                </div>
+              </li>
+              <li>
+                <div class="list_inner">
+                  <h3>9K+</h3>
+                  <span>Lines of Code</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="partners">
+            <div class="about_title">
+              <h3>Our Partners</h3>
+            </div>
+            <ul class="owl-carousel owl-loaded owl-drag">
+
+
+
+
+
+
+
+
+              <div class="owl-stage-outer">
+                <div class="owl-stage"
+                  style="transform: translate3d(-1740px, 0px, 0px); transition: all 0.25s ease 0s; width: 4640px;">
+                  <div class="owl-item cloned" style="width: 240px; margin-right: 50px;">
+                    <li class="item"><a href="#"><img src="img/partners/5.png" alt=""></a></li>
+                  </div>
+                  <div class="owl-item cloned" style="width: 240px; margin-right: 50px;">
+                    <li class="item"><a href="#"><img src="img/partners/6.png" alt=""></a></li>
+                  </div>
+                  <div class="owl-item cloned" style="width: 240px; margin-right: 50px;">
+                    <li class="item"><a href="#"><img src="img/partners/7.png" alt=""></a></li>
+                  </div>
+                  <div class="owl-item cloned" style="width: 240px; margin-right: 50px;">
+                    <li class="item"><a href="#"><img src="img/partners/8.png" alt=""></a></li>
+                  </div>
+                  <div class="owl-item" style="width: 240px; margin-right: 50px;">
+                    <li class="item"><a href="#"><img src="img/partners/1.png" alt=""></a></li>
+                  </div>
+                  <div class="owl-item" style="width: 240px; margin-right: 50px;">
+                    <li class="item"><a href="#"><img src="img/partners/2.png" alt=""></a></li>
+                  </div>
+                  <div class="owl-item active" style="width: 240px; margin-right: 50px;">
+                    <li class="item"><a href="#"><img src="img/partners/3.png" alt=""></a></li>
+                  </div>
+                  <div class="owl-item" style="width: 240px; margin-right: 50px;">
+                    <li class="item"><a href="#"><img src="img/partners/4.png" alt=""></a></li>
+                  </div>
+                  <div class="owl-item" style="width: 240px; margin-right: 50px;">
+                    <li class="item"><a href="#"><img src="img/partners/5.png" alt=""></a></li>
+                  </div>
+                  <div class="owl-item" style="width: 240px; margin-right: 50px;">
+                    <li class="item"><a href="#"><img src="img/partners/6.png" alt=""></a></li>
+                  </div>
+                  <div class="owl-item" style="width: 240px; margin-right: 50px;">
+                    <li class="item"><a href="#"><img src="img/partners/7.png" alt=""></a></li>
+                  </div>
+                  <div class="owl-item" style="width: 240px; margin-right: 50px;">
+                    <li class="item"><a href="#"><img src="img/partners/8.png" alt=""></a></li>
+                  </div>
+                  <div class="owl-item cloned" style="width: 240px; margin-right: 50px;">
+                    <li class="item"><a href="#"><img src="img/partners/1.png" alt=""></a></li>
+                  </div>
+                  <div class="owl-item cloned" style="width: 240px; margin-right: 50px;">
+                    <li class="item"><a href="#"><img src="img/partners/2.png" alt=""></a></li>
+                  </div>
+                  <div class="owl-item cloned" style="width: 240px; margin-right: 50px;">
+                    <li class="item"><a href="#"><img src="img/partners/3.png" alt=""></a></li>
+                  </div>
+                  <div class="owl-item cloned" style="width: 240px; margin-right: 50px;">
+                    <li class="item"><a href="#"><img src="img/partners/4.png" alt=""></a></li>
+                  </div>
+                </div>
+              </div>
+              <div class="owl-nav disabled">
+                <div class="owl-prev">prev</div>
+                <div class="owl-next">next</div>
+              </div>
+              <div class="owl-dots">
+                <div class="owl-dot"><span></span></div>
+                <div class="owl-dot"><span></span></div>
+                <div class="owl-dot active"><span></span></div>
+                <div class="owl-dot"><span></span></div>
+                <div class="owl-dot"><span></span></div>
+                <div class="owl-dot"><span></span></div>
+                <div class="owl-dot"><span></span></div>
+                <div class="owl-dot"><span></span></div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="waxon_tm_topbar opened" style="    background: white;">
+      <div class="container">
+        <div class="topbar_inner">
+          <div class="logo">
+            <a href="#">
+              <img src="img/logo/dark.png" alt="">
+            </a>
+          </div>
+          <div class="menu">
+            <div class="links">
+              <ul class="anchor_nav">
+                <li class="current">
+                  <a href="#home">
+                    <span class="first">Inicio</span>
+                    <span class="second">Inicio</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="#about">
+                    <span class="first">Sobre mi</span>
+                    <span class="second">Sobre mi</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="#portfolio">
+                    <span class="first">Portafolio</span>
+                    <span class="second">Portafolio</span>
+                  </a>
+                </li>
+                <!-- <li class="">
+                  <a href="#news">
+                    <span class="first">News</span>
+                    <span class="second">News</span>
+                  </a>
+                </li> -->
+                <li class="">
+                  <a href="#contact">
+                    <span class="first">Contacto</span>
+                    <span class="second">Contacto</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="waxon_tm_mobile_menu">
+      <div class="topbar_inner">
+        <div class="container bigger">
+          <div class="topbar_in">
+            <div class="logo">
+              <a href="#"><img src="img/logo/dark.png" alt=""></a>
+            </div>
+            <div class="my_trigger">
+              <div class="hamburger hamburger--collapse-r is-active">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown" style="display: block;">
+        <div class="container">
+          <div class="dropdown_inner">
+            <ul class="anchor_nav">
+              <li class=""><a href="#home">Home</a></li>
+              <li class=""><a href="#about">About</a></li>
+              <li class=""><a href="#portfolio">Portfolio</a></li>
+              <li class="current"><a href="#news">News</a></li>
+              <li class=""><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="waxon_tm_hero" id="home">
+      <div class="background">
+        <div class="leftpart"></div>
+        <div class="rightpart">
+          <div class="inner">
+            <div class="fn_cs_personal_slider">
+              <div class="swiper-container swiper-container-initialized swiper-container-horizontal">
+                <div class="swiper-wrapper"
+                  style="transition-duration: 1500ms; transform: translate3d(-1920px, 0px, 0px);">
+                  <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0"
+                    style="width: 320px; transition: all 1500ms ease 0s;">
+                    <div class="main_image" data-img-url="img/slider/1.jpg"
+                      style="transform: translateX(960px); transition: all 1500ms ease 0s; background-image: url(&quot;img/slider/1.jpg&quot;);">
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1"
+                    style="width: 320px; transition: all 1500ms ease 0s;">
+                    <div class="main_image" data-img-url="img/slider/3.jpg"
+                      style="transform: translateX(800px); transition: all 1500ms ease 0s; background-image: url(&quot;img/slider/3.jpg&quot;);">
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev"
+                    data-swiper-slide-index="2" style="width: 320px; transition: all 1500ms ease 0s;">
+                    <div class="main_image" data-img-url="img/slider/4.jpg"
+                      style="transform: translateX(640px); transition: all 1500ms ease 0s; background-image: url(&quot;img/slider/4.jpg&quot;);">
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-duplicate-active" data-swiper-slide-index="0"
+                    style="width: 320px; transition: all 1500ms ease 0s;">
+                    <div class="main_image" data-img-url="img/slider/1.jpg"
+                      style="transform: translateX(480px); transition: all 1500ms ease 0s; background-image: url(&quot;img/slider/1.jpg&quot;);">
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-duplicate-next" data-swiper-slide-index="1"
+                    style="width: 320px; transition: all 1500ms ease 0s;">
+                    <div class="main_image" data-img-url="img/slider/3.jpg"
+                      style="transform: translateX(320px); transition: all 1500ms ease 0s; background-image: url(&quot;img/slider/3.jpg&quot;);">
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="2"
+                    style="width: 320px; transition: all 1500ms ease 0s;">
+                    <div class="main_image" data-img-url="img/slider/4.jpg"
+                      style="transform: translateX(160px); transition: all 1500ms ease 0s; background-image: url(&quot;img/slider/4.jpg&quot;);">
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-duplicate swiper-slide-active" data-swiper-slide-index="0"
+                    style="width: 320px; transition: all 1500ms ease 0s;">
+                    <div class="main_image" data-img-url="img/slider/1.jpg"
+                      style="transform: translateX(0px); transition: all 1500ms ease 0s; background-image: url(&quot;img/slider/1.jpg&quot;);">
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-duplicate swiper-slide-next" data-swiper-slide-index="1"
+                    style="width: 320px; transition: all 1500ms ease 0s;">
+                    <div class="main_image" data-img-url="img/slider/3.jpg"
+                      style="transform: translateX(-160px); transition: all 1500ms ease 0s; background-image: url(&quot;img/slider/3.jpg&quot;);">
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev"
+                    data-swiper-slide-index="2" style="width: 320px; transition: all 1500ms ease 0s;">
+                    <div class="main_image" data-img-url="img/slider/4.jpg"
+                      style="transform: translateX(-320px); transition: all 1500ms ease 0s; background-image: url(&quot;img/slider/4.jpg&quot;);">
+                    </div>
+                  </div>
+                </div>
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+              </div>
+            </div>
+            <div class="overlay_image"></div>
+            <div class="myOverlay loaded"></div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="container">
+          <div class="content_inner">
+            <div class="name">
+              <h3 class="stroke">Isaias</h3>
+              <h3>Basán</h3>
+              <span>Diseñador Gráfico</span>
+            </div>
+          </div>
+          <div class="waxon_tm_down" data-skin="dark" data-position="">
+            <div class="line_wrapper">
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="waxon_tm_about" id="about">
+      <div class="container">
+        <div class="about_inner">
+          <div class="left">
+            <img class="thumbnail simple-parallax-initialized" src="img/about/1.jpeg" alt=""
+              style="will-change: transform; transform: translate3d(0px, -51px, 0px); transition: transform 5s cubic-bezier(0, 0, 0, 1) 0s;">
+          </div>
+          <div class="right">
+            <div class="name">
+              <h3>Isaias Bazán<span class="bg">About</span></h3>
+              <span class="job">Diseñador Gráfico</span>
+            </div>
+            <div class="text">
+              <p>Mi nombre es Isaias Bazán, soy Diseñador Gráfico, y soy muy apasionado y dedicado a mi trabajo</p>
+              <p>Soy diseñador gráfico en elaboración de diversas piezas
+                He ayudado a clientes a encontrar sus identidades visuales y a darles forma durante los últimos 1 años
+                de mi carrera
+                profesional.
+
+                He trabajado tanto con pequeñas empresas, elaborando distintos trabajos de diseño basados en Ilustrador
+                Photoshop, ID,
+                elaborando mockups.
+              </p>
+            </div>
+            <!-- <div class="waxon_tm_button" data-position="left">
+              <a href="#">
+                <span>Learn More</span>
+              </a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- <div class="waxon_tm_service">
+      <div class="container">
+        <div class="service_inner">
+          <ul class="owl-carousel owl-loaded owl-drag">
+
+
+
+
+            <div class="owl-stage-outer">
+              <div class="owl-stage"
+                style="transform: translate3d(-990px, 0px, 0px); transition: all 0.25s ease 0s; width: 2640px;">
+                <div class="owl-item cloned" style="width: 280px; margin-right: 50px;">
+                  <li class="item">
+                    <div class="list_inner">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="1 -35 511.99993 511" class="svg replaced-svg">
+                        <path
+                          d="m121.453125 253.171875 63.554687 158.886719 82.75-82.753906 141.535157 112.503906 102.707031-441.308594-512 205.480469zm-39.933594-47.640625 244.046875-97.945312-194.074218 117.363281zm287.535157-89.25-161.980469 148.1875-19.484375 73.425781-36.035156-90.085937zm-149.851563 219.230469 9.816406-36.996094 15.144531 12.035156zm171.65625 53.394531-147.386719-117.152344 221.902344-203.007812zm0 0">
+                        </path>
+                      </svg>
+                      <div class="details">
+                        <h3>Brand Identity</h3>
+                        <p>Web design is a similar process of creation, with the intention intention of the pre
+                          presenting...</p>
+                      </div>
+                    </div>
+                  </li>
+                </div>
+                <div class="owl-item cloned" style="width: 280px; margin-right: 50px;">
+                  <li class="item">
+                    <div class="list_inner">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                        xml:space="preserve" class="svg replaced-svg">
+                        <g>
+                          <g>
+                            <path d="M0,0v512h512V0H0z M482,482H30V30h452V482z"></path>
+                          </g>
+                        </g>
+                        <g>
+                          <g>
+                            <path
+                              d="M213.102,181.6h-72.24V352h33.12v-57.12h40.32c29.531,0,53.04-25.713,53.04-56.64    C267.342,212,246.166,181.6,213.102,181.6z M212.382,265.84h-38.4v-55.2h36.96c14.057,0,22.8,13.2,22.8,27.6    C233.742,255,224,265.84,212.382,265.84z">
+                            </path>
+                          </g>
+                        </g>
+                        <g>
+                          <g>
+                            <path
+                              d="M336.939,276.64c-4.642-1.118-24.72-4.39-24.72-15.84c0-9.175,7.531-14.16,19.2-14.16c15.831,0,30.079,9.12,36.48,13.92    l12.96-19.44c-6.881-6.079-21.609-17.28-49.2-17.28c-26.284,0-49.44,14.91-49.44,41.52c0,27.64,36.72,32.801,44.88,35.04    c9.757,2.723,27.6,6.225,27.6,17.04c0,8.81-8.449,13.92-20.64,13.92c-18.809,0-36.48-11.119-44.16-16.56l-12,20.16    c7.2,6.24,27.851,19.44,56.88,19.44c15.679,0,50.88-4.9,50.88-39.84C385.659,285,345.579,278.882,336.939,276.64z">
+                            </path>
+                          </g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                      </svg>
+                      <div class="details">
+                        <h3>Adobe Photoshop</h3>
+                        <p>Web design is a similar process of creation, with the intention intention of the pre
+                          presenting...</p>
+                      </div>
+                    </div>
+                  </li>
+                </div>
+                <div class="owl-item" style="width: 280px; margin-right: 50px;">
+                  <li class="item">
+                    <div class="list_inner">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                        xml:space="preserve" class="svg replaced-svg">
+                        <g>
+                          <g>
+                            <path
+                              d="M0,15.845v420.259h164.332v30.049h-30.036v30.001h243.407v-30.001h-30.036v-30.049H512V15.845H0z M317.665,466.153    H194.334v-30.049h123.332V466.153z M481.999,406.103H30.001v-60.075h451.997V406.103z M481.999,316.027H30.001V45.847h451.997    V316.027z">
+                            </path>
+                          </g>
+                        </g>
+                        <g>
+                          <g>
+                            <polygon
+                              points="203.943,126.712 182.729,105.498 107.29,180.937 182.729,256.375 203.943,235.161 149.718,180.937   ">
+                            </polygon>
+                          </g>
+                        </g>
+                        <g>
+                          <g>
+                            <polygon
+                              points="329.271,105.498 308.057,126.712 362.282,180.937 308.057,235.161 329.271,256.375 404.709,180.937   ">
+                            </polygon>
+                          </g>
+                        </g>
+                        <g>
+                          <g>
+
+                            <rect x="166.742" y="165.947"
+                              transform="matrix(0.1951 -0.9808 0.9808 0.1951 28.5815 396.7237)" width="178.511"
+                              height="30.002"></rect>
+                          </g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                      </svg>
+                      <div class="details">
+                        <h3>Web Development</h3>
+                        <p>Web design is a similar process of creation, with the intention intention of the pre
+                          presenting...</p>
+                      </div>
+                    </div>
+                  </li>
+                </div>
+                <div class="owl-item active" style="width: 280px; margin-right: 50px;">
+                  <li class="item">
+                    <div class="list_inner">
+                      <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" enable-background="new 0 0 511.73 511.73"
+                        height="512" viewBox="0 0 511.73 511.73" width="512" class="svg replaced-svg">
+                        <g id="XMLID_837_">
+                          <path id="XMLID_853_"
+                            d="m258.002 81.905c-.555-.006-1.104-.01-1.658-.01-36.652 0-71.396 14.032-97.988 39.616-27.006 25.981-42.411 60.803-43.376 98.05-.832 32.088 8.834 62.594 27.952 88.219 22.321 29.918 34.12 64.8 34.12 100.875v103.075h156.854l.018-98.865c0-37.491 12.314-73.727 35.612-104.79 18.46-24.612 28.217-53.925 28.217-84.769 0-37.482-14.516-72.8-40.874-99.445-26.337-26.624-61.452-41.524-98.877-41.956zm45.904 399.825h-96.854v-52.433h96.854zm-63.143-174.491c0-8.115 6.602-14.717 14.716-14.717s14.716 6.602 14.716 14.717c0 8.114-6.602 14.716-14.716 14.716s-14.716-6.601-14.716-14.716zm104.773-17.164c-24.415 32.553-38.508 70.066-41.155 109.223h-33.902v-49.939c17.3-6.179 29.717-22.724 29.717-42.12 0-24.657-20.06-44.717-44.716-44.717s-44.716 20.06-44.716 44.717c0 19.396 12.417 35.94 29.716 42.12v49.939h-33.651c-1.878-39.235-15.559-76.897-39.852-109.457-15.053-20.176-22.663-44.21-22.007-69.502 1.568-60.489 52.07-109.153 112.687-108.436 60.708.7 110.097 50.675 110.097 111.403-.001 24.301-7.684 47.39-22.218 66.769z">
+                          </path>
+                          <path id="XMLID_1294_"
+                            d="m186.989 227.754 21.213 21.213c12.628-12.628 29.418-19.583 47.277-19.583s34.649 6.955 47.278 19.583l21.213-21.213c-18.295-18.295-42.618-28.37-68.491-28.37-25.872 0-50.196 10.075-68.49 28.37z">
+                          </path>
+                          <path id="XMLID_1295_" d="m241.251 0h30v36.554h-30z"></path>
+                          <path id="XMLID_1296_" d="m131.211 29.071h30v36.554h-30z"
+                            transform="matrix(.866 -.5 .5 .866 -4.086 79.447)"></path>
+                          <path id="XMLID_1297_" d="m50.449 109.268h30v36.554h-30z"
+                            transform="matrix(.5 -.866 .866 .5 -77.733 120.451)"></path>
+                          <path id="XMLID_1298_" d="m428.006 113.882h36.553v30h-36.553z"
+                            transform="matrix(.866 -.5 .5 .866 -4.652 240.404)"></path>
+                          <path id="XMLID_1299_" d="m347.808 33.12h36.554v30h-36.554z"
+                            transform="matrix(.5 -.866 .866 .5 141.368 341.098)"></path>
+                        </g>
+                      </svg>
+                      <div class="details">
+                        <h3>Creative Design</h3>
+                        <p>Web design is a similar process of creation, with the intention intention of the pre
+                          presenting...</p>
+                      </div>
+                    </div>
+                  </li>
+                </div>
+                <div class="owl-item" style="width: 280px; margin-right: 50px;">
+                  <li class="item">
+                    <div class="list_inner">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="1 -35 511.99993 511" class="svg replaced-svg">
+                        <path
+                          d="m121.453125 253.171875 63.554687 158.886719 82.75-82.753906 141.535157 112.503906 102.707031-441.308594-512 205.480469zm-39.933594-47.640625 244.046875-97.945312-194.074218 117.363281zm287.535157-89.25-161.980469 148.1875-19.484375 73.425781-36.035156-90.085937zm-149.851563 219.230469 9.816406-36.996094 15.144531 12.035156zm171.65625 53.394531-147.386719-117.152344 221.902344-203.007812zm0 0">
+                        </path>
+                      </svg>
+                      <div class="details">
+                        <h3>Brand Identity</h3>
+                        <p>Web design is a similar process of creation, with the intention intention of the pre
+                          presenting...</p>
+                      </div>
+                    </div>
+                  </li>
+                </div>
+                <div class="owl-item" style="width: 280px; margin-right: 50px;">
+                  <li class="item">
+                    <div class="list_inner">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                        xml:space="preserve" class="svg replaced-svg">
+                        <g>
+                          <g>
+                            <path d="M0,0v512h512V0H0z M482,482H30V30h452V482z"></path>
+                          </g>
+                        </g>
+                        <g>
+                          <g>
+                            <path
+                              d="M213.102,181.6h-72.24V352h33.12v-57.12h40.32c29.531,0,53.04-25.713,53.04-56.64    C267.342,212,246.166,181.6,213.102,181.6z M212.382,265.84h-38.4v-55.2h36.96c14.057,0,22.8,13.2,22.8,27.6    C233.742,255,224,265.84,212.382,265.84z">
+                            </path>
+                          </g>
+                        </g>
+                        <g>
+                          <g>
+                            <path
+                              d="M336.939,276.64c-4.642-1.118-24.72-4.39-24.72-15.84c0-9.175,7.531-14.16,19.2-14.16c15.831,0,30.079,9.12,36.48,13.92    l12.96-19.44c-6.881-6.079-21.609-17.28-49.2-17.28c-26.284,0-49.44,14.91-49.44,41.52c0,27.64,36.72,32.801,44.88,35.04    c9.757,2.723,27.6,6.225,27.6,17.04c0,8.81-8.449,13.92-20.64,13.92c-18.809,0-36.48-11.119-44.16-16.56l-12,20.16    c7.2,6.24,27.851,19.44,56.88,19.44c15.679,0,50.88-4.9,50.88-39.84C385.659,285,345.579,278.882,336.939,276.64z">
+                            </path>
+                          </g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                      </svg>
+                      <div class="details">
+                        <h3>Adobe Photoshop</h3>
+                        <p>Web design is a similar process of creation, with the intention intention of the pre
+                          presenting...</p>
+                      </div>
+                    </div>
+                  </li>
+                </div>
+                <div class="owl-item cloned" style="width: 280px; margin-right: 50px;">
+                  <li class="item">
+                    <div class="list_inner">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                        xml:space="preserve" class="svg replaced-svg">
+                        <g>
+                          <g>
+                            <path
+                              d="M0,15.845v420.259h164.332v30.049h-30.036v30.001h243.407v-30.001h-30.036v-30.049H512V15.845H0z M317.665,466.153    H194.334v-30.049h123.332V466.153z M481.999,406.103H30.001v-60.075h451.997V406.103z M481.999,316.027H30.001V45.847h451.997    V316.027z">
+                            </path>
+                          </g>
+                        </g>
+                        <g>
+                          <g>
+                            <polygon
+                              points="203.943,126.712 182.729,105.498 107.29,180.937 182.729,256.375 203.943,235.161 149.718,180.937   ">
+                            </polygon>
+                          </g>
+                        </g>
+                        <g>
+                          <g>
+                            <polygon
+                              points="329.271,105.498 308.057,126.712 362.282,180.937 308.057,235.161 329.271,256.375 404.709,180.937   ">
+                            </polygon>
+                          </g>
+                        </g>
+                        <g>
+                          <g>
+
+                            <rect x="166.742" y="165.947"
+                              transform="matrix(0.1951 -0.9808 0.9808 0.1951 28.5815 396.7237)" width="178.511"
+                              height="30.002"></rect>
+                          </g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                      </svg>
+                      <div class="details">
+                        <h3>Web Development</h3>
+                        <p>Web design is a similar process of creation, with the intention intention of the pre
+                          presenting...</p>
+                      </div>
+                    </div>
+                  </li>
+                </div>
+                <div class="owl-item cloned" style="width: 280px; margin-right: 50px;">
+                  <li class="item">
+                    <div class="list_inner">
+                      <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" enable-background="new 0 0 511.73 511.73"
+                        height="512" viewBox="0 0 511.73 511.73" width="512" class="svg replaced-svg">
+                        <g id="XMLID_837_">
+                          <path id="XMLID_853_"
+                            d="m258.002 81.905c-.555-.006-1.104-.01-1.658-.01-36.652 0-71.396 14.032-97.988 39.616-27.006 25.981-42.411 60.803-43.376 98.05-.832 32.088 8.834 62.594 27.952 88.219 22.321 29.918 34.12 64.8 34.12 100.875v103.075h156.854l.018-98.865c0-37.491 12.314-73.727 35.612-104.79 18.46-24.612 28.217-53.925 28.217-84.769 0-37.482-14.516-72.8-40.874-99.445-26.337-26.624-61.452-41.524-98.877-41.956zm45.904 399.825h-96.854v-52.433h96.854zm-63.143-174.491c0-8.115 6.602-14.717 14.716-14.717s14.716 6.602 14.716 14.717c0 8.114-6.602 14.716-14.716 14.716s-14.716-6.601-14.716-14.716zm104.773-17.164c-24.415 32.553-38.508 70.066-41.155 109.223h-33.902v-49.939c17.3-6.179 29.717-22.724 29.717-42.12 0-24.657-20.06-44.717-44.716-44.717s-44.716 20.06-44.716 44.717c0 19.396 12.417 35.94 29.716 42.12v49.939h-33.651c-1.878-39.235-15.559-76.897-39.852-109.457-15.053-20.176-22.663-44.21-22.007-69.502 1.568-60.489 52.07-109.153 112.687-108.436 60.708.7 110.097 50.675 110.097 111.403-.001 24.301-7.684 47.39-22.218 66.769z">
+                          </path>
+                          <path id="XMLID_1294_"
+                            d="m186.989 227.754 21.213 21.213c12.628-12.628 29.418-19.583 47.277-19.583s34.649 6.955 47.278 19.583l21.213-21.213c-18.295-18.295-42.618-28.37-68.491-28.37-25.872 0-50.196 10.075-68.49 28.37z">
+                          </path>
+                          <path id="XMLID_1295_" d="m241.251 0h30v36.554h-30z"></path>
+                          <path id="XMLID_1296_" d="m131.211 29.071h30v36.554h-30z"
+                            transform="matrix(.866 -.5 .5 .866 -4.086 79.447)"></path>
+                          <path id="XMLID_1297_" d="m50.449 109.268h30v36.554h-30z"
+                            transform="matrix(.5 -.866 .866 .5 -77.733 120.451)"></path>
+                          <path id="XMLID_1298_" d="m428.006 113.882h36.553v30h-36.553z"
+                            transform="matrix(.866 -.5 .5 .866 -4.652 240.404)"></path>
+                          <path id="XMLID_1299_" d="m347.808 33.12h36.554v30h-36.554z"
+                            transform="matrix(.5 -.866 .866 .5 141.368 341.098)"></path>
+                        </g>
+                      </svg>
+                      <div class="details">
+                        <h3>Creative Design</h3>
+                        <p>Web design is a similar process of creation, with the intention intention of the pre
+                          presenting...</p>
+                      </div>
+                    </div>
+                  </li>
+                </div>
+              </div>
+            </div>
+            <div class="owl-nav disabled">
+              <div class="owl-prev">prev</div>
+              <div class="owl-next">next</div>
+            </div>
+            <div class="owl-dots">
+              <div class="owl-dot"><span></span></div>
+              <div class="owl-dot active"><span></span></div>
+              <div class="owl-dot"><span></span></div>
+              <div class="owl-dot"><span></span></div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div> -->
+
+
+    <div class="waxon_tm_portoflio" id="portfolio">
+      <div class="container">
+        <div class="waxon_tm_main_title">
+          <div class="title">
+            <h3>Tranajos realizados<span class="bg">Portfolio</span></h3>
+          </div>
+          <!-- <div class="portfolio_filter">
+            <ul>
+              <li>
+                <a href="#" class="current" data-filter="*">
+                  <span class="first">All</span>
+                  <span class="second">All</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" data-filter=".vimeo">
+                  <span class="first">Vimeo</span>
+                  <span class="second">Vimeo</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" data-filter=".youtube">
+                  <span class="first">Youtube</span>
+                  <span class="second">Youtube</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" data-filter=".soundcloud">
+                  <span class="first">Soundcloud</span>
+                  <span class="second">Soundcloud</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" data-filter=".image">
+                  <span class="first">Image</span>
+                  <span class="second">Image</span>
+                </a>
+              </li>
+            </ul>
+            <div class="wrapper">
+              <a href="#"><span class="trigger"></span></a>
+            </div>
+          </div> -->
+        </div>
+        <div class="portfolio_inner">
+          <ul class="gallery_zoom">
+            <!-- <li class="vimeo">
+              <div class="list_inner">
+                <div class="image">
+                  <img src="img/thumbs/1-1.jpg" alt="">
+                  <div class="main" data-img-url="img/portfolio/1.jpg"
+                    style="background-image: url(&quot;img/portfolio/1.jpg&quot;);"></div>
+                  <a class="full_link popup-vimeo" href="https://vimeo.com/312334044"></a>
+                </div>
+                <div class="title">
+                  <h3><a href="#">Sweet Cherry</a></h3>
+                  <span><a href="#">Vimeo</a></span>
+                </div>
+              </div>
+            </li>
+            <li class="youtube">
+              <div class="list_inner">
+                <div class="image">
+                  <img src="img/thumbs/1-1.jpg" alt="">
+                  <div class="main" data-img-url="img/portfolio/2.jpg"
+                    style="background-image: url(&quot;img/portfolio/2.jpg&quot;);"></div>
+                  <a class="full_link popup-youtube" href="https://www.youtube.com/watch?v=Amq-qlqbjYA"></a>
+                </div>
+                <div class="title">
+                  <h3><a href="#">Delicious Fruit</a></h3>
+                  <span><a href="#">Youtube</a></span>
+                </div>
+              </div>
+            </li>
+            <li class="soundcloud">
+              <div class="list_inner">
+                <div class="image">
+                  <img src="img/thumbs/1-1.jpg" alt="">
+                  <div class="main" data-img-url="img/portfolio/3.jpg"
+                    style="background-image: url(&quot;img/portfolio/3.jpg&quot;);"></div>
+                  <a class="full_link soundcloude_link mfp-iframe audio"
+                    href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/252739311&amp;color=%23ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=truehttps://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/252739311&amp;color=%23ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></a>
+                </div>
+                <div class="title">
+                  <h3><a href="#">Blue Lemon</a></h3>
+                  <span><a href="#">Soundcloud</a></span>
+                </div>
+              </div>
+            </li> -->
+            <li class="image">
+              <div class="list_inner">
+                <div class="image">
+                  <img src="img/thumbs/1-1.jpg" alt="">
+                  <div class="main" style="background-image: url(&quot;img/portafolio/1.jpg&quot;);"></div>
+                  <a class="full_link zoom" href="img/portafolio/1.jpg"></a>
+                </div>
+                <div class="title">
+                  <h3><a href="#">Yellow Phone</a></h3>
+                  <span><a href="#">Imagen</a></span>
+                </div>
+              </div>
+            </li>
+            <li class="image">
+              <div class="list_inner">
+                <div class="image">
+                  <img src="img/thumbs/1-1.jpg" alt="">
+                  <div class="main" style="background-image: url(&quot;img/portafolio/2.png&quot;);"></div>
+                  <a class="full_link zoom" href="img/portafolio/2.png"></a>
+                </div>
+                <div class="title">
+                  <h3><a href="#">Logo Restaurante</a></h3>
+                  <span><a href="#">Imagen</a></span>
+                </div>
+              </div>
+            </li>
+            <li class="image">
+              <div class="list_inner">
+                <div class="image">
+                  <img src="img/thumbs/1-1.jpg" alt="">
+                  <div class="main" style="background-image: url(&quot;img/portafolio/3.jpg&quot;);"></div>
+                  <a class="full_link zoom" href="img/portafolio/3.jpg"></a>
+                </div>
+                <div class="title">
+                  <h3><a href="#">Poster</a></h3>
+                  <span><a href="#">Imagen</a></span>
+                </div>
+              </div>
+            </li>
+            <li class="image">
+              <div class="list_inner">
+                <div class="image">
+                  <img src="img/thumbs/1-1.jpg" alt="">
+                  <div class="main" style="background-image: url(&quot;img/portafolio/4.jpg&quot;);"></div>
+                  <a class="full_link zoom" href="img/portafolio/4.jpg"></a>
+                </div>
+                <div class="title">
+                  <h3><a href="#">Logo Restaurante</a></h3>
+                  <span><a href="#">Imagen</a></span>
+                </div>
+              </div>
+            </li>
+            <li class="image">
+              <div class="list_inner">
+                <div class="image">
+                  <img src="img/thumbs/1-1.jpg" alt="">
+                  <div class="main" style="background-image: url(&quot;img/portafolio/5.png&quot;);"></div>
+                  <a class="full_link zoom" href="img/portafolio/5.png"></a>
+                </div>
+                <div class="title">
+                  <h3><a href="#">Banner Restaurante</a></h3>
+                  <span><a href="#">Imagen</a></span>
+                </div>
+              </div>
+            </li>
+            <li class="image">
+              <div class="list_inner">
+                <div class="image">
+                  <img src="img/thumbs/1-1.jpg" alt="">
+                  <div class="main" style="background-image: url(&quot;img/portafolio/6.jpg&quot;);"></div>
+                  <a class="full_link zoom" href="img/portafolio/6 .jpg"></a>
+                </div>
+                <div class="title">
+                  <h3><a href="#">Poster</a></h3>
+                  <span><a href="#">Imagen</a></span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- <div class="waxon_tm_testimonials">
+      <div class="container">
+        <div class="waxon_tm_main_title">
+          <div class="title">
+            <h3>What Clients Say<span class="bg">Testimonial</span></h3>
+          </div>
+        </div>
+        <div class="testi_inner">
+          <div class="left">
+            <div class="quote_list">
+              <ul>
+                <li class="active">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                    id="Capa_1" x="0px" y="0px" width="475.082px" height="475.081px" viewBox="0 0 475.082 475.081"
+                    style="enable-background:new 0 0 475.082 475.081;" xml:space="preserve" class="svg replaced-svg">
+                    <g>
+                      <g>
+                        <path
+                          d="M164.454,36.547H54.818c-15.229,0-28.171,5.33-38.832,15.987C5.33,63.193,0,76.135,0,91.365v109.632    c0,15.229,5.327,28.169,15.986,38.826c10.66,10.656,23.606,15.988,38.832,15.988h63.953c7.611,0,14.084,2.666,19.414,7.994    c5.33,5.325,7.994,11.8,7.994,19.417v9.131c0,20.177-7.139,37.397-21.413,51.675c-14.275,14.271-31.499,21.409-51.678,21.409    H54.818c-4.952,0-9.233,1.813-12.851,5.427c-3.615,3.614-5.424,7.898-5.424,12.847v36.549c0,4.941,1.809,9.233,5.424,12.848    c3.621,3.613,7.898,5.427,12.851,5.427h18.271c19.797,0,38.688-3.86,56.676-11.566c17.987-7.707,33.546-18.131,46.68-31.265    c13.131-13.135,23.553-28.691,31.261-46.679c7.707-17.987,11.562-36.877,11.562-56.671V91.361c0-15.23-5.33-28.171-15.987-38.828    S179.679,36.547,164.454,36.547z">
+                        </path>
+                        <path
+                          d="M459.089,52.534c-10.656-10.657-23.599-15.987-38.828-15.987H310.629c-15.229,0-28.171,5.33-38.828,15.987    c-10.656,10.66-15.984,23.601-15.984,38.831v109.632c0,15.229,5.328,28.169,15.984,38.826    c10.657,10.656,23.6,15.988,38.828,15.988h63.953c7.611,0,14.089,2.666,19.418,7.994c5.324,5.328,7.994,11.8,7.994,19.417v9.131    c0,20.177-7.139,37.397-21.416,51.675c-14.274,14.271-31.494,21.409-51.675,21.409h-18.274c-4.948,0-9.233,1.813-12.847,5.427    c-3.617,3.614-5.428,7.898-5.428,12.847v36.549c0,4.941,1.811,9.233,5.428,12.848c3.613,3.613,7.898,5.427,12.847,5.427h18.274    c19.794,0,38.684-3.86,56.674-11.566c17.984-7.707,33.541-18.131,46.676-31.265c13.134-13.135,23.562-28.695,31.265-46.679    c7.706-17.983,11.563-36.877,11.563-56.671V91.361C475.078,76.131,469.753,63.19,459.089,52.534z">
+                        </path>
+                      </g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                  </svg>
+                  <p class="text">Good overall template. I am getting back into coding and had a simple question for the
+                    author. They responded within 30 minutes and answered my question. Highly recommend.</p>
+                  <div class="details">
+                    <div class="image">
+                      <div class="main" data-img-url="img/about/1.jpg"
+                        style="background-image: url(&quot;img/about/1.jpg&quot;);"></div>
+                    </div>
+                    <div class="short">
+                      <h3 class="author"><span>Nelly Furtado</span></h3>
+                      <h3 class="job"><span>App Developer</span></h3>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                    id="Capa_1" x="0px" y="0px" width="475.082px" height="475.081px" viewBox="0 0 475.082 475.081"
+                    style="enable-background:new 0 0 475.082 475.081;" xml:space="preserve" class="svg replaced-svg">
+                    <g>
+                      <g>
+                        <path
+                          d="M164.454,36.547H54.818c-15.229,0-28.171,5.33-38.832,15.987C5.33,63.193,0,76.135,0,91.365v109.632    c0,15.229,5.327,28.169,15.986,38.826c10.66,10.656,23.606,15.988,38.832,15.988h63.953c7.611,0,14.084,2.666,19.414,7.994    c5.33,5.325,7.994,11.8,7.994,19.417v9.131c0,20.177-7.139,37.397-21.413,51.675c-14.275,14.271-31.499,21.409-51.678,21.409    H54.818c-4.952,0-9.233,1.813-12.851,5.427c-3.615,3.614-5.424,7.898-5.424,12.847v36.549c0,4.941,1.809,9.233,5.424,12.848    c3.621,3.613,7.898,5.427,12.851,5.427h18.271c19.797,0,38.688-3.86,56.676-11.566c17.987-7.707,33.546-18.131,46.68-31.265    c13.131-13.135,23.553-28.691,31.261-46.679c7.707-17.987,11.562-36.877,11.562-56.671V91.361c0-15.23-5.33-28.171-15.987-38.828    S179.679,36.547,164.454,36.547z">
+                        </path>
+                        <path
+                          d="M459.089,52.534c-10.656-10.657-23.599-15.987-38.828-15.987H310.629c-15.229,0-28.171,5.33-38.828,15.987    c-10.656,10.66-15.984,23.601-15.984,38.831v109.632c0,15.229,5.328,28.169,15.984,38.826    c10.657,10.656,23.6,15.988,38.828,15.988h63.953c7.611,0,14.089,2.666,19.418,7.994c5.324,5.328,7.994,11.8,7.994,19.417v9.131    c0,20.177-7.139,37.397-21.416,51.675c-14.274,14.271-31.494,21.409-51.675,21.409h-18.274c-4.948,0-9.233,1.813-12.847,5.427    c-3.617,3.614-5.428,7.898-5.428,12.847v36.549c0,4.941,1.811,9.233,5.428,12.848c3.613,3.613,7.898,5.427,12.847,5.427h18.274    c19.794,0,38.684-3.86,56.674-11.566c17.984-7.707,33.541-18.131,46.676-31.265c13.134-13.135,23.562-28.695,31.265-46.679    c7.706-17.983,11.563-36.877,11.563-56.671V91.361C475.078,76.131,469.753,63.19,459.089,52.534z">
+                        </path>
+                      </g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                  </svg>
+                  <p class="text">I can't believe I got support and my problem resolved in just minutes from posting my
+                    question. Simply amazing team and amazing theme! Thank you very much guys for excellent support!
+                  </p>
+                  <div class="details">
+                    <div class="image">
+                      <div class="main" data-img-url="img/about/2.jpg"
+                        style="background-image: url(&quot;img/about/2.jpg&quot;);"></div>
+                    </div>
+                    <div class="short">
+                      <h3 class="author"><span>Brian Ederson</span></h3>
+                      <h3 class="job"><span>Web Designer</span></h3>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                    id="Capa_1" x="0px" y="0px" width="475.082px" height="475.081px" viewBox="0 0 475.082 475.081"
+                    style="enable-background:new 0 0 475.082 475.081;" xml:space="preserve" class="svg replaced-svg">
+                    <g>
+                      <g>
+                        <path
+                          d="M164.454,36.547H54.818c-15.229,0-28.171,5.33-38.832,15.987C5.33,63.193,0,76.135,0,91.365v109.632    c0,15.229,5.327,28.169,15.986,38.826c10.66,10.656,23.606,15.988,38.832,15.988h63.953c7.611,0,14.084,2.666,19.414,7.994    c5.33,5.325,7.994,11.8,7.994,19.417v9.131c0,20.177-7.139,37.397-21.413,51.675c-14.275,14.271-31.499,21.409-51.678,21.409    H54.818c-4.952,0-9.233,1.813-12.851,5.427c-3.615,3.614-5.424,7.898-5.424,12.847v36.549c0,4.941,1.809,9.233,5.424,12.848    c3.621,3.613,7.898,5.427,12.851,5.427h18.271c19.797,0,38.688-3.86,56.676-11.566c17.987-7.707,33.546-18.131,46.68-31.265    c13.131-13.135,23.553-28.691,31.261-46.679c7.707-17.987,11.562-36.877,11.562-56.671V91.361c0-15.23-5.33-28.171-15.987-38.828    S179.679,36.547,164.454,36.547z">
+                        </path>
+                        <path
+                          d="M459.089,52.534c-10.656-10.657-23.599-15.987-38.828-15.987H310.629c-15.229,0-28.171,5.33-38.828,15.987    c-10.656,10.66-15.984,23.601-15.984,38.831v109.632c0,15.229,5.328,28.169,15.984,38.826    c10.657,10.656,23.6,15.988,38.828,15.988h63.953c7.611,0,14.089,2.666,19.418,7.994c5.324,5.328,7.994,11.8,7.994,19.417v9.131    c0,20.177-7.139,37.397-21.416,51.675c-14.274,14.271-31.494,21.409-51.675,21.409h-18.274c-4.948,0-9.233,1.813-12.847,5.427    c-3.617,3.614-5.428,7.898-5.428,12.847v36.549c0,4.941,1.811,9.233,5.428,12.848c3.613,3.613,7.898,5.427,12.847,5.427h18.274    c19.794,0,38.684-3.86,56.674-11.566c17.984-7.707,33.541-18.131,46.676-31.265c13.134-13.135,23.562-28.695,31.265-46.679    c7.706-17.983,11.563-36.877,11.563-56.671V91.361C475.078,76.131,469.753,63.19,459.089,52.534z">
+                        </path>
+                      </g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                  </svg>
+                  <p class="text">Awesome template, well written code and looks great on any platform. The customer
+                    support is very helpful and as huge asset to this template. Overall a good design, that I am quite
+                    happy with.</p>
+                  <div class="details">
+                    <div class="image">
+                      <div class="main" data-img-url="img/about/3.jpg"
+                        style="background-image: url(&quot;img/about/3.jpg&quot;);"></div>
+                    </div>
+                    <div class="short">
+                      <h3 class="author"><span>Steve Collins</span></h3>
+                      <h3 class="job"><span>Artel Corp.</span></h3>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="right">
+            <div class="image_list">
+              <ul class="masonry" style="position: relative; height: 0px;">
+                <li class="masonry_item active"
+                  style="position: absolute; left: 0px; top: 0px; transition-property: opacity, transform; transition-duration: 0.4s; transition-delay: 0ms;">
+                  <div class="image">
+                    <img src="img/thumbs/3-4.jpg" alt="">
+                    <div class="main" data-img-url="img/about/1.jpg"
+                      style="background-image: url(&quot;img/about/1.jpg&quot;);"></div>
+                  </div>
+                </li>
+                <li class="masonry_item"
+                  style="position: absolute; left: 260px; top: 0px; transition-property: opacity, transform; transition-duration: 0.4s; transition-delay: 0ms;">
+                  <div class="image">
+                    <img src="img/thumbs/4-3.jpg" alt="">
+                    <div class="main" data-img-url="img/about/2.jpg"
+                      style="background-image: url(&quot;img/about/2.jpg&quot;);"></div>
+                  </div>
+                </li>
+                <li class="masonry_item"
+                  style="position: absolute; left: 260px; top: 207.5px; transition-property: opacity, transform; transition-duration: 0.4s; transition-delay: 0ms;">
+                  <div class="image">
+                    <img src="img/thumbs/1-1.jpg" alt="">
+                    <div class="main" data-img-url="img/about/3.jpg"
+                      style="background-image: url(&quot;img/about/3.jpg&quot;);"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- 
+    <div class="waxon_tm_news" id="news">
+      <div class="container">
+        <div class="waxon_tm_main_title">
+          <div class="title">
+            <h3>Latest News<span class="bg">News</span></h3>
+          </div>
+        </div>
+        <div class="news_inner">
+          <ul>
+            <li class="wow fadeInDown" data-wow-duration="0.8s"
+              style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInDown;">
+              <div class="list_inner">
+                <div class="image">
+                  <img src="img/thumbs/4-3.jpg" alt="">
+                  <div class="main" data-img-url="img/news/1.jpg"
+                    style="background-image: url(&quot;img/news/1.jpg&quot;);"></div>
+                  <a class="full_link" href="#"></a>
+                </div>
+                <div class="details">
+                  <div class="extra">
+                    <p class="date">By <a href="#">Alex Watson</a> <span>10 May 2021</span></p>
+                  </div>
+                  <h3 class="title"><a href="#">Developers watch out for these burnout symptoms</a></h3>
+                </div>
+                <div class="main_content">
+                  <div class="descriptions">
+                    <p class="bigger">Just because we can't get out and about like we normally would, doesn’t mean we
+                      have to stop taking pictures. There’s still plenty you can do, provided you're prepared to use
+                      some imagination. Here are a few ideas to keep you shooting until normal life resumes.</p>
+                    <p>Most photographers love to shoot the unusual, and you don’t get much more unusual than These
+                      Unprecedented Times. Right now everything counts as out of the ordinary. There are a number of
+                      remarkable things about these lockdown days that are worth photographing now so we can remember
+                      them when it is all over.</p>
+                    <p>Streets empty that are usually busy are remarkable and can evoke the sense of historical pictures
+                      from before the invention of the motorcar. Other things that are different at the moment will be
+                      queues to get into stores and the lines marked out on the floor to show how far apart we should
+                      be.</p>
+                    <div class="quotebox">
+                      <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                          id="Capa_1" x="0px" y="0px" width="349.078px" height="349.078px" viewBox="0 0 349.078 349.078"
+                          style="enable-background:new 0 0 349.078 349.078;" xml:space="preserve"
+                          class="svg replaced-svg">
+                          <g>
+                            <path
+                              d="M150.299,26.634v58.25c0,7.9-6.404,14.301-14.304,14.301c-28.186,0-43.518,28.909-45.643,85.966h45.643   c7.9,0,14.304,6.407,14.304,14.304v122.992c0,7.896-6.404,14.298-14.304,14.298H14.301C6.398,336.745,0,330.338,0,322.447V199.455   c0-27.352,2.754-52.452,8.183-74.611c5.568-22.721,14.115-42.587,25.396-59.048c11.608-16.917,26.128-30.192,43.16-39.44   C93.886,17.052,113.826,12.333,136,12.333C143.895,12.333,150.299,18.734,150.299,26.634z M334.773,99.186   c7.896,0,14.305-6.407,14.305-14.301v-58.25c0-7.9-6.408-14.301-14.305-14.301c-22.165,0-42.108,4.72-59.249,14.023   c-17.035,9.248-31.563,22.523-43.173,39.44c-11.277,16.461-19.824,36.328-25.393,59.054c-5.426,22.166-8.18,47.266-8.18,74.605   v122.992c0,7.896,6.406,14.298,14.304,14.298h121.69c7.896,0,14.299-6.407,14.299-14.298V199.455   c0-7.896-6.402-14.304-14.299-14.304h-44.992C291.873,128.095,306.981,99.186,334.773,99.186z">
+                            </path>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                        </svg>
+                      </div>
+                      <p>Most photographers find it hard to see interesting pictures in places in which they are most
+                        familiar. A trip somewhere new seems always exactly what our photography needed, as shooting
+                        away from home consistently inspires us to new artistic heights.</p>
+                    </div>
+                    <p>Pretend everything is new and that you haven’t seen it before, and then you will be free to
+                      notice the leading lines, the places where one edge meets another in delightful geometric harmony,
+                      and how the ordinary things in the kitchen are transformed when the light is on or off.</p>
+                    <p>The trick here is to look slowly, and then look again. Take the time to look in detail and to
+                      look at the same thing from different angles, with different light, long lenses and wide lenses.
+                      Then move to the left a bit. You may never feel the need to leave the house again.</p>
+                  </div>
+                  <div class="news_share">
+                    <span>Share:</span>
+                    <ul>
+                      <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            version="1.1" id="Capa_1" x="0px" y="0px" width="96.124px" height="96.123px"
+                            viewBox="0 0 96.124 96.123" style="enable-background:new 0 0 96.124 96.123;"
+                            xml:space="preserve" class="svg replaced-svg">
+                            <g>
+                              <path
+                                d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803   c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654   c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246   c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z">
+                              </path>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                          </svg></a></li>
+                      <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512"
+                            style="enable-background:new 0 0 512 512;" xml:space="preserve" class="svg replaced-svg">
+                            <g>
+                              <g>
+                                <path
+                                  d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016    c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992    c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056    c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152    c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792    c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44    C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568    C480.224,136.96,497.728,118.496,512,97.248z">
+                                </path>
+                              </g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                          </svg></a></li>
+                      <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512"
+                            style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512" height="512"
+                            class="svg replaced-svg">
+                            <g>
+                              <path
+                                d="M256,152c-57.9,0-105,47.1-105,105s47.1,105,105,105s105-47.1,105-105S313.9,152,256,152z M256,152   c-57.9,0-105,47.1-105,105s47.1,105,105,105s105-47.1,105-105S313.9,152,256,152z M437,0H75C33.6,0,0,33.6,0,75v362   c0,41.4,33.6,75,75,75h362c41.4,0,75-33.6,75-75V75C512,33.6,478.4,0,437,0z M256,392c-74.399,0-135-60.601-135-135   c0-74.401,60.601-135,135-135s135,60.599,135,135C391,331.399,330.399,392,256,392z M421,122c-16.5,0-30-13.5-30-30s13.5-30,30-30   s30,13.5,30,30S437.5,122,421,122z M256,152c-57.9,0-105,47.1-105,105s47.1,105,105,105s105-47.1,105-105S313.9,152,256,152z    M256,152c-57.9,0-105,47.1-105,105s47.1,105,105,105s105-47.1,105-105S313.9,152,256,152z M256,152c-57.9,0-105,47.1-105,105   s47.1,105,105,105s105-47.1,105-105S313.9,152,256,152z">
+                              </path>
+                            </g>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          </svg></a></li>
+                      <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="512pt" viewBox="0 0 512 512"
+                            width="512pt" class="svg replaced-svg">
+                            <path
+                              d="m333.023438 279.15625c25.109374 63.527344 43.753906 128.929688 55.871093 195.746094 17.285157-10.539063 33.441407-23.203125 48.125-37.882813 38.140625-38.144531 62.753907-86.207031 71.449219-138.371093-37.46875-15.5-78.503906-24.078126-121.507812-24.078126-18.382813 0-36.398438 1.585938-53.9375 4.585938zm0 0">
+                            </path>
+                            <path
+                              d="m437.234375 75.199219c-.074219-.070313-.144531-.148438-.214844-.21875-48.355469-48.351563-112.640625-74.980469-181.019531-74.980469-26.738281 0-52.851562 4.089844-77.628906 11.941406 39.714844 49.757813 74.652344 102.859375 104.59375 158.980469 56.40625-23.949219 108.363281-56.398437 154.269531-95.722656zm0 0">
+                            </path>
+                            <path
+                              d="m457.347656 97.859375c-48.15625 41.363281-101.96875 74.882813-160.527344 99.933594 8.632813 17.378906 16.785157 35.035156 24.480469 52.953125 21.488281-4.089844 43.414063-6.175782 65.660157-6.175782 43.089843 0 85 7.75 124.769531 23.003907.171875-3.84375.269531-7.699219.269531-11.570313 0-58.09375-19.226562-113.222656-54.652344-158.144531zm0 0">
+                            </path>
+                            <path
+                              d="m98.425781 457.800781c44.816407 35.140625 99.730469 54.199219 157.574219 54.199219 36.765625 0 72.34375-7.710938 104.902344-22.34375-12.203125-70.710938-31.742188-138.9375-57.8125-203.871094-90.597656 24.726563-165.238282 88.484375-204.664063 172.015625zm0 0">
+                            </path>
+                            <path
+                              d="m251.160156 271.992188c13.167969-5.570313 26.589844-10.289063 40.222656-14.171876-7.195312-16.476562-14.828124-32.71875-22.859374-48.730468-69.160157 25.679687-141.882813 38.691406-216.585938 38.691406-17.355469 0-34.597656-.714844-51.714844-2.113281-.1367185 3.433593-.222656 6.878906-.222656 10.335937 0 68.378906 26.628906 132.664063 74.980469 181.015625.015625.015625.035156.03125.050781.046875 16.722656-33.351562 38.59375-63.664062 65.242188-90.316406 32.035156-32.03125 69.339843-57.183594 110.886718-74.757812zm0 0">
+                            </path>
+                            <path
+                              d="m254.492188 182.144531c-30.378907-56.261719-65.921876-109.34375-105.980469-158.617187-26.996094 12.503906-51.867188 29.789062-73.53125 51.453125-38.734375 38.734375-63.511719 87.699219-71.839844 140.800781 16.09375 1.316406 32.367187 2 48.796875 2 71.101562 0 139.324219-12.585938 202.554688-35.636719zm0 0">
+                            </path>
+                          </svg></a></li>
+                      <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" id="Capa_1"
+                            enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
+                            class="svg replaced-svg">
+                            <g>
+                              <path
+                                d="m480.32 128.39c-29.22 0-56.18-9.68-77.83-26.01-24.83-18.72-42.67-46.18-48.97-77.83-1.56-7.82-2.4-15.89-2.48-24.16h-83.47v228.08l-.1 124.93c0 33.4-21.75 61.72-51.9 71.68-8.75 2.89-18.2 4.26-28.04 3.72-12.56-.69-24.33-4.48-34.56-10.6-21.77-13.02-36.53-36.64-36.93-63.66-.63-42.23 33.51-76.66 75.71-76.66 8.33 0 16.33 1.36 23.82 3.83v-62.34-22.41c-7.9-1.17-15.94-1.78-24.07-1.78-46.19 0-89.39 19.2-120.27 53.79-23.34 26.14-37.34 59.49-39.5 94.46-2.83 45.94 13.98 89.61 46.58 121.83 4.79 4.73 9.82 9.12 15.08 13.17 27.95 21.51 62.12 33.17 98.11 33.17 8.13 0 16.17-.6 24.07-1.77 33.62-4.98 64.64-20.37 89.12-44.57 30.08-29.73 46.7-69.2 46.88-111.21l-.43-186.56c14.35 11.07 30.04 20.23 46.88 27.34 26.19 11.05 53.96 16.65 82.54 16.64v-60.61-22.49c.02.02-.22.02-.24.02z">
+                              </path>
+                            </g>
+                          </svg></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.2s"
+              style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.2s; animation-name: fadeInDown;">
+              <div class="list_inner">
+                <div class="image">
+                  <img src="img/thumbs/4-3.jpg" alt="">
+                  <div class="main" data-img-url="img/news/2.jpg"
+                    style="background-image: url(&quot;img/news/2.jpg&quot;);"></div>
+                  <a class="full_link" href="#"></a>
+                </div>
+                <div class="details">
+                  <div class="extra">
+                    <p class="date">By <a href="#">Bona Green</a> <span>05 April 2021</span></p>
+                  </div>
+                  <h3 class="title"><a href="#">How to be appreciated for your hard work as a developer</a></h3>
+                </div>
+                <div class="main_content">
+                  <div class="descriptions">
+                    <p class="bigger">Just because we can't get out and about like we normally would, doesn’t mean we
+                      have to stop taking pictures. There’s still plenty you can do, provided you're prepared to use
+                      some imagination. Here are a few ideas to keep you shooting until normal life resumes.</p>
+                    <p>Most photographers love to shoot the unusual, and you don’t get much more unusual than These
+                      Unprecedented Times. Right now everything counts as out of the ordinary. There are a number of
+                      remarkable things about these lockdown days that are worth photographing now so we can remember
+                      them when it is all over.</p>
+                    <p>Streets empty that are usually busy are remarkable and can evoke the sense of historical pictures
+                      from before the invention of the motorcar. Other things that are different at the moment will be
+                      queues to get into stores and the lines marked out on the floor to show how far apart we should
+                      be.</p>
+                    <div class="quotebox">
+                      <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                          id="Capa_1" x="0px" y="0px" width="349.078px" height="349.078px" viewBox="0 0 349.078 349.078"
+                          style="enable-background:new 0 0 349.078 349.078;" xml:space="preserve"
+                          class="svg replaced-svg">
+                          <g>
+                            <path
+                              d="M150.299,26.634v58.25c0,7.9-6.404,14.301-14.304,14.301c-28.186,0-43.518,28.909-45.643,85.966h45.643   c7.9,0,14.304,6.407,14.304,14.304v122.992c0,7.896-6.404,14.298-14.304,14.298H14.301C6.398,336.745,0,330.338,0,322.447V199.455   c0-27.352,2.754-52.452,8.183-74.611c5.568-22.721,14.115-42.587,25.396-59.048c11.608-16.917,26.128-30.192,43.16-39.44   C93.886,17.052,113.826,12.333,136,12.333C143.895,12.333,150.299,18.734,150.299,26.634z M334.773,99.186   c7.896,0,14.305-6.407,14.305-14.301v-58.25c0-7.9-6.408-14.301-14.305-14.301c-22.165,0-42.108,4.72-59.249,14.023   c-17.035,9.248-31.563,22.523-43.173,39.44c-11.277,16.461-19.824,36.328-25.393,59.054c-5.426,22.166-8.18,47.266-8.18,74.605   v122.992c0,7.896,6.406,14.298,14.304,14.298h121.69c7.896,0,14.299-6.407,14.299-14.298V199.455   c0-7.896-6.402-14.304-14.299-14.304h-44.992C291.873,128.095,306.981,99.186,334.773,99.186z">
+                            </path>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                        </svg>
+                      </div>
+                      <p>Most photographers find it hard to see interesting pictures in places in which they are most
+                        familiar. A trip somewhere new seems always exactly what our photography needed, as shooting
+                        away from home consistently inspires us to new artistic heights.</p>
+                    </div>
+                    <p>Pretend everything is new and that you haven’t seen it before, and then you will be free to
+                      notice the leading lines, the places where one edge meets another in delightful geometric harmony,
+                      and how the ordinary things in the kitchen are transformed when the light is on or off.</p>
+                    <p>The trick here is to look slowly, and then look again. Take the time to look in detail and to
+                      look at the same thing from different angles, with different light, long lenses and wide lenses.
+                      Then move to the left a bit. You may never feel the need to leave the house again.</p>
+                  </div>
+                  <div class="news_share">
+                    <span>Share:</span>
+                    <ul>
+                      <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            version="1.1" id="Capa_1" x="0px" y="0px" width="96.124px" height="96.123px"
+                            viewBox="0 0 96.124 96.123" style="enable-background:new 0 0 96.124 96.123;"
+                            xml:space="preserve" class="svg replaced-svg">
+                            <g>
+                              <path
+                                d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803   c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654   c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246   c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z">
+                              </path>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                          </svg></a></li>
+                      <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512"
+                            style="enable-background:new 0 0 512 512;" xml:space="preserve" class="svg replaced-svg">
+                            <g>
+                              <g>
+                                <path
+                                  d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016    c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992    c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056    c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152    c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792    c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44    C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568    C480.224,136.96,497.728,118.496,512,97.248z">
+                                </path>
+                              </g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                          </svg></a></li>
+                      <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512"
+                            style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512" height="512"
+                            class="svg replaced-svg">
+                            <g>
+                              <path
+                                d="M256,152c-57.9,0-105,47.1-105,105s47.1,105,105,105s105-47.1,105-105S313.9,152,256,152z M256,152   c-57.9,0-105,47.1-105,105s47.1,105,105,105s105-47.1,105-105S313.9,152,256,152z M437,0H75C33.6,0,0,33.6,0,75v362   c0,41.4,33.6,75,75,75h362c41.4,0,75-33.6,75-75V75C512,33.6,478.4,0,437,0z M256,392c-74.399,0-135-60.601-135-135   c0-74.401,60.601-135,135-135s135,60.599,135,135C391,331.399,330.399,392,256,392z M421,122c-16.5,0-30-13.5-30-30s13.5-30,30-30   s30,13.5,30,30S437.5,122,421,122z M256,152c-57.9,0-105,47.1-105,105s47.1,105,105,105s105-47.1,105-105S313.9,152,256,152z    M256,152c-57.9,0-105,47.1-105,105s47.1,105,105,105s105-47.1,105-105S313.9,152,256,152z M256,152c-57.9,0-105,47.1-105,105   s47.1,105,105,105s105-47.1,105-105S313.9,152,256,152z">
+                              </path>
+                            </g>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          </svg></a></li>
+                      <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="512pt" viewBox="0 0 512 512"
+                            width="512pt" class="svg replaced-svg">
+                            <path
+                              d="m333.023438 279.15625c25.109374 63.527344 43.753906 128.929688 55.871093 195.746094 17.285157-10.539063 33.441407-23.203125 48.125-37.882813 38.140625-38.144531 62.753907-86.207031 71.449219-138.371093-37.46875-15.5-78.503906-24.078126-121.507812-24.078126-18.382813 0-36.398438 1.585938-53.9375 4.585938zm0 0">
+                            </path>
+                            <path
+                              d="m437.234375 75.199219c-.074219-.070313-.144531-.148438-.214844-.21875-48.355469-48.351563-112.640625-74.980469-181.019531-74.980469-26.738281 0-52.851562 4.089844-77.628906 11.941406 39.714844 49.757813 74.652344 102.859375 104.59375 158.980469 56.40625-23.949219 108.363281-56.398437 154.269531-95.722656zm0 0">
+                            </path>
+                            <path
+                              d="m457.347656 97.859375c-48.15625 41.363281-101.96875 74.882813-160.527344 99.933594 8.632813 17.378906 16.785157 35.035156 24.480469 52.953125 21.488281-4.089844 43.414063-6.175782 65.660157-6.175782 43.089843 0 85 7.75 124.769531 23.003907.171875-3.84375.269531-7.699219.269531-11.570313 0-58.09375-19.226562-113.222656-54.652344-158.144531zm0 0">
+                            </path>
+                            <path
+                              d="m98.425781 457.800781c44.816407 35.140625 99.730469 54.199219 157.574219 54.199219 36.765625 0 72.34375-7.710938 104.902344-22.34375-12.203125-70.710938-31.742188-138.9375-57.8125-203.871094-90.597656 24.726563-165.238282 88.484375-204.664063 172.015625zm0 0">
+                            </path>
+                            <path
+                              d="m251.160156 271.992188c13.167969-5.570313 26.589844-10.289063 40.222656-14.171876-7.195312-16.476562-14.828124-32.71875-22.859374-48.730468-69.160157 25.679687-141.882813 38.691406-216.585938 38.691406-17.355469 0-34.597656-.714844-51.714844-2.113281-.1367185 3.433593-.222656 6.878906-.222656 10.335937 0 68.378906 26.628906 132.664063 74.980469 181.015625.015625.015625.035156.03125.050781.046875 16.722656-33.351562 38.59375-63.664062 65.242188-90.316406 32.035156-32.03125 69.339843-57.183594 110.886718-74.757812zm0 0">
+                            </path>
+                            <path
+                              d="m254.492188 182.144531c-30.378907-56.261719-65.921876-109.34375-105.980469-158.617187-26.996094 12.503906-51.867188 29.789062-73.53125 51.453125-38.734375 38.734375-63.511719 87.699219-71.839844 140.800781 16.09375 1.316406 32.367187 2 48.796875 2 71.101562 0 139.324219-12.585938 202.554688-35.636719zm0 0">
+                            </path>
+                          </svg></a></li>
+                      <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" id="Capa_1"
+                            enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
+                            class="svg replaced-svg">
+                            <g>
+                              <path
+                                d="m480.32 128.39c-29.22 0-56.18-9.68-77.83-26.01-24.83-18.72-42.67-46.18-48.97-77.83-1.56-7.82-2.4-15.89-2.48-24.16h-83.47v228.08l-.1 124.93c0 33.4-21.75 61.72-51.9 71.68-8.75 2.89-18.2 4.26-28.04 3.72-12.56-.69-24.33-4.48-34.56-10.6-21.77-13.02-36.53-36.64-36.93-63.66-.63-42.23 33.51-76.66 75.71-76.66 8.33 0 16.33 1.36 23.82 3.83v-62.34-22.41c-7.9-1.17-15.94-1.78-24.07-1.78-46.19 0-89.39 19.2-120.27 53.79-23.34 26.14-37.34 59.49-39.5 94.46-2.83 45.94 13.98 89.61 46.58 121.83 4.79 4.73 9.82 9.12 15.08 13.17 27.95 21.51 62.12 33.17 98.11 33.17 8.13 0 16.17-.6 24.07-1.77 33.62-4.98 64.64-20.37 89.12-44.57 30.08-29.73 46.7-69.2 46.88-111.21l-.43-186.56c14.35 11.07 30.04 20.23 46.88 27.34 26.19 11.05 53.96 16.65 82.54 16.64v-60.61-22.49c.02.02-.22.02-.24.02z">
+                              </path>
+                            </g>
+                          </svg></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.4s"
+              style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.4s; animation-name: fadeInDown;">
+              <div class="list_inner">
+                <div class="image">
+                  <img src="img/thumbs/4-3.jpg" alt="">
+                  <div class="main" data-img-url="img/news/3.jpg"
+                    style="background-image: url(&quot;img/news/3.jpg&quot;);"></div>
+                  <a class="full_link" href="#"></a>
+                </div>
+                <div class="details">
+                  <div class="extra">
+                    <p class="date">By <a href="#">Ave Smith</a> <span>22 March 2021</span></p>
+                  </div>
+                  <h3 class="title"><a href="#">How designers and developers can collaborate better</a></h3>
+                </div>
+                <div class="main_content">
+                  <div class="descriptions">
+                    <p class="bigger">Just because we can't get out and about like we normally would, doesn’t mean we
+                      have to stop taking pictures. There’s still plenty you can do, provided you're prepared to use
+                      some imagination. Here are a few ideas to keep you shooting until normal life resumes.</p>
+                    <p>Most photographers love to shoot the unusual, and you don’t get much more unusual than These
+                      Unprecedented Times. Right now everything counts as out of the ordinary. There are a number of
+                      remarkable things about these lockdown days that are worth photographing now so we can remember
+                      them when it is all over.</p>
+                    <p>Streets empty that are usually busy are remarkable and can evoke the sense of historical pictures
+                      from before the invention of the motorcar. Other things that are different at the moment will be
+                      queues to get into stores and the lines marked out on the floor to show how far apart we should
+                      be.</p>
+                    <div class="quotebox">
+                      <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                          id="Capa_1" x="0px" y="0px" width="349.078px" height="349.078px" viewBox="0 0 349.078 349.078"
+                          style="enable-background:new 0 0 349.078 349.078;" xml:space="preserve"
+                          class="svg replaced-svg">
+                          <g>
+                            <path
+                              d="M150.299,26.634v58.25c0,7.9-6.404,14.301-14.304,14.301c-28.186,0-43.518,28.909-45.643,85.966h45.643   c7.9,0,14.304,6.407,14.304,14.304v122.992c0,7.896-6.404,14.298-14.304,14.298H14.301C6.398,336.745,0,330.338,0,322.447V199.455   c0-27.352,2.754-52.452,8.183-74.611c5.568-22.721,14.115-42.587,25.396-59.048c11.608-16.917,26.128-30.192,43.16-39.44   C93.886,17.052,113.826,12.333,136,12.333C143.895,12.333,150.299,18.734,150.299,26.634z M334.773,99.186   c7.896,0,14.305-6.407,14.305-14.301v-58.25c0-7.9-6.408-14.301-14.305-14.301c-22.165,0-42.108,4.72-59.249,14.023   c-17.035,9.248-31.563,22.523-43.173,39.44c-11.277,16.461-19.824,36.328-25.393,59.054c-5.426,22.166-8.18,47.266-8.18,74.605   v122.992c0,7.896,6.406,14.298,14.304,14.298h121.69c7.896,0,14.299-6.407,14.299-14.298V199.455   c0-7.896-6.402-14.304-14.299-14.304h-44.992C291.873,128.095,306.981,99.186,334.773,99.186z">
+                            </path>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                        </svg>
+                      </div>
+                      <p>Most photographers find it hard to see interesting pictures in places in which they are most
+                        familiar. A trip somewhere new seems always exactly what our photography needed, as shooting
+                        away from home consistently inspires us to new artistic heights.</p>
+                    </div>
+                    <p>Pretend everything is new and that you haven’t seen it before, and then you will be free to
+                      notice the leading lines, the places where one edge meets another in delightful geometric harmony,
+                      and how the ordinary things in the kitchen are transformed when the light is on or off.</p>
+                    <p>The trick here is to look slowly, and then look again. Take the time to look in detail and to
+                      look at the same thing from different angles, with different light, long lenses and wide lenses.
+                      Then move to the left a bit. You may never feel the need to leave the house again.</p>
+                  </div>
+                  <div class="news_share">
+                    <span>Share:</span>
+                    <ul>
+                      <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            version="1.1" id="Capa_1" x="0px" y="0px" width="96.124px" height="96.123px"
+                            viewBox="0 0 96.124 96.123" style="enable-background:new 0 0 96.124 96.123;"
+                            xml:space="preserve" class="svg replaced-svg">
+                            <g>
+                              <path
+                                d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803   c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654   c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246   c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z">
+                              </path>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                          </svg></a></li>
+                      <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512"
+                            style="enable-background:new 0 0 512 512;" xml:space="preserve" class="svg replaced-svg">
+                            <g>
+                              <g>
+                                <path
+                                  d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016    c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992    c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056    c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152    c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792    c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44    C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568    C480.224,136.96,497.728,118.496,512,97.248z">
+                                </path>
+                              </g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                          </svg></a></li>
+                      <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512"
+                            style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512" height="512"
+                            class="svg replaced-svg">
+                            <g>
+                              <path
+                                d="M256,152c-57.9,0-105,47.1-105,105s47.1,105,105,105s105-47.1,105-105S313.9,152,256,152z M256,152   c-57.9,0-105,47.1-105,105s47.1,105,105,105s105-47.1,105-105S313.9,152,256,152z M437,0H75C33.6,0,0,33.6,0,75v362   c0,41.4,33.6,75,75,75h362c41.4,0,75-33.6,75-75V75C512,33.6,478.4,0,437,0z M256,392c-74.399,0-135-60.601-135-135   c0-74.401,60.601-135,135-135s135,60.599,135,135C391,331.399,330.399,392,256,392z M421,122c-16.5,0-30-13.5-30-30s13.5-30,30-30   s30,13.5,30,30S437.5,122,421,122z M256,152c-57.9,0-105,47.1-105,105s47.1,105,105,105s105-47.1,105-105S313.9,152,256,152z    M256,152c-57.9,0-105,47.1-105,105s47.1,105,105,105s105-47.1,105-105S313.9,152,256,152z M256,152c-57.9,0-105,47.1-105,105   s47.1,105,105,105s105-47.1,105-105S313.9,152,256,152z">
+                              </path>
+                            </g>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          </svg></a></li>
+                      <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="512pt" viewBox="0 0 512 512"
+                            width="512pt" class="svg replaced-svg">
+                            <path
+                              d="m333.023438 279.15625c25.109374 63.527344 43.753906 128.929688 55.871093 195.746094 17.285157-10.539063 33.441407-23.203125 48.125-37.882813 38.140625-38.144531 62.753907-86.207031 71.449219-138.371093-37.46875-15.5-78.503906-24.078126-121.507812-24.078126-18.382813 0-36.398438 1.585938-53.9375 4.585938zm0 0">
+                            </path>
+                            <path
+                              d="m437.234375 75.199219c-.074219-.070313-.144531-.148438-.214844-.21875-48.355469-48.351563-112.640625-74.980469-181.019531-74.980469-26.738281 0-52.851562 4.089844-77.628906 11.941406 39.714844 49.757813 74.652344 102.859375 104.59375 158.980469 56.40625-23.949219 108.363281-56.398437 154.269531-95.722656zm0 0">
+                            </path>
+                            <path
+                              d="m457.347656 97.859375c-48.15625 41.363281-101.96875 74.882813-160.527344 99.933594 8.632813 17.378906 16.785157 35.035156 24.480469 52.953125 21.488281-4.089844 43.414063-6.175782 65.660157-6.175782 43.089843 0 85 7.75 124.769531 23.003907.171875-3.84375.269531-7.699219.269531-11.570313 0-58.09375-19.226562-113.222656-54.652344-158.144531zm0 0">
+                            </path>
+                            <path
+                              d="m98.425781 457.800781c44.816407 35.140625 99.730469 54.199219 157.574219 54.199219 36.765625 0 72.34375-7.710938 104.902344-22.34375-12.203125-70.710938-31.742188-138.9375-57.8125-203.871094-90.597656 24.726563-165.238282 88.484375-204.664063 172.015625zm0 0">
+                            </path>
+                            <path
+                              d="m251.160156 271.992188c13.167969-5.570313 26.589844-10.289063 40.222656-14.171876-7.195312-16.476562-14.828124-32.71875-22.859374-48.730468-69.160157 25.679687-141.882813 38.691406-216.585938 38.691406-17.355469 0-34.597656-.714844-51.714844-2.113281-.1367185 3.433593-.222656 6.878906-.222656 10.335937 0 68.378906 26.628906 132.664063 74.980469 181.015625.015625.015625.035156.03125.050781.046875 16.722656-33.351562 38.59375-63.664062 65.242188-90.316406 32.035156-32.03125 69.339843-57.183594 110.886718-74.757812zm0 0">
+                            </path>
+                            <path
+                              d="m254.492188 182.144531c-30.378907-56.261719-65.921876-109.34375-105.980469-158.617187-26.996094 12.503906-51.867188 29.789062-73.53125 51.453125-38.734375 38.734375-63.511719 87.699219-71.839844 140.800781 16.09375 1.316406 32.367187 2 48.796875 2 71.101562 0 139.324219-12.585938 202.554688-35.636719zm0 0">
+                            </path>
+                          </svg></a></li>
+                      <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" id="Capa_1"
+                            enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
+                            class="svg replaced-svg">
+                            <g>
+                              <path
+                                d="m480.32 128.39c-29.22 0-56.18-9.68-77.83-26.01-24.83-18.72-42.67-46.18-48.97-77.83-1.56-7.82-2.4-15.89-2.48-24.16h-83.47v228.08l-.1 124.93c0 33.4-21.75 61.72-51.9 71.68-8.75 2.89-18.2 4.26-28.04 3.72-12.56-.69-24.33-4.48-34.56-10.6-21.77-13.02-36.53-36.64-36.93-63.66-.63-42.23 33.51-76.66 75.71-76.66 8.33 0 16.33 1.36 23.82 3.83v-62.34-22.41c-7.9-1.17-15.94-1.78-24.07-1.78-46.19 0-89.39 19.2-120.27 53.79-23.34 26.14-37.34 59.49-39.5 94.46-2.83 45.94 13.98 89.61 46.58 121.83 4.79 4.73 9.82 9.12 15.08 13.17 27.95 21.51 62.12 33.17 98.11 33.17 8.13 0 16.17-.6 24.07-1.77 33.62-4.98 64.64-20.37 89.12-44.57 30.08-29.73 46.7-69.2 46.88-111.21l-.43-186.56c14.35 11.07 30.04 20.23 46.88 27.34 26.19 11.05 53.96 16.65 82.54 16.64v-60.61-22.49c.02.02-.22.02-.24.02z">
+                              </path>
+                            </g>
+                          </svg></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div> -->
+
+
+    <div class="waxon_tm_contact" id="contact">
+      <div class="bg_image"></div>
+      <div class="container">
+        <div class="contact_inner">
+          <div class="waxon_tm_main_title">
+            <div class="title">
+              <h3>Ponte en contacto<span class="bg">Contacto</span></h3>
+            </div>
+          </div>
+          <div class="desc">
+            <p>Por favor, rellene el formulario de esta sección para ponerse en contacto conmigo. O llama entre las 9:00
+              a. m. y las
+              8:00 p. m. hora del este, de lunes a viernes </p>
+          </div>
+          <div class="wrapper">
+            <div class="left wow fadeInLeft" data-wow-duration="0.8s"
+              style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInLeft;">
+              <div class="fields">
+                <form action="/" method="post" class="contact_form" id="contact_form" autocomplete="off">
+                  <div class="returnmessage" data-success="Your message has been received, We will contact you soon.">
+                  </div>
+                  <div class="empty_notice"><span>Please Fill Required Fields</span></div>
+                  <div class="first">
+                    <ul>
+                      <li>
+                        <input id="name" type="text" placeholder="Nombres">
+                      </li>
+                      <li>
+                        <input id="email" type="text" placeholder="Correo electrónico">
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="last">
+                    <textarea id="message" placeholder="Mensaje"></textarea>
+                  </div>
+                  <div class="waxon_tm_button" data-position="left">
+                    <a id="send_message" href="#">
+                      <span>Enviar mensaje</span>
+                    </a>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+            <div class="right wow fadeInRight" data-wow-duration="0.8s"
+              style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInRight;">
+              <div class="map_wrap">
+                <div class="map" id="ieatmaps" style="position: relative; overflow: hidden;">
+                  <div
+                    style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.3000627051024!2d-79.02570151175341!3d-8.068517083863423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ad3e0144b3a5e7%3A0x9e86555f1849e185!2sBarrio%202%2C%20El%20Porvenir%2013002!5e0!3m2!1ses-419!2spe!4v1682372508580!5m2!1ses-419!2spe"
+                      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="waxon_tm_copyright">
+      <div class="container">
+        <div class="copyright_inner">
+          <ul>
+            <li class="wow fadeInDown" data-wow-duration="0.8s"
+              style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInDown;">
+              <span>Diseñador Gráfico</span>
+              <span>Isaias Bazán</span>
+            </li>
+            <li class="wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.2s"
+              style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.2s; animation-name: fadeInDown;">
+              <span>Mz.A Lote 6 Barrio 3A</span>
+              <span>Alto Trujillo - Trujillo</span>
+            </li>
+            <li class="wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.4s"
+              style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.4s; animation-name: fadeInDown;">
+              <span><a href="#">isaiasBazan@gmail.com</a></span>
+              <span>+51 927 434 901</span>
+            </li>
+            <li class="wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.6s"
+              style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.6s; animation-name: fadeInDown;">
+              <div class="social">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <span class="first"><svg xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                          width="96.124px" height="96.123px" viewBox="0 0 96.124 96.123"
+                          style="enable-background:new 0 0 96.124 96.123;" xml:space="preserve"
+                          class="svg replaced-svg">
+                          <g>
+                            <path
+                              d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803   c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654   c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246   c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z">
+                            </path>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                        </svg></span>
+                      <span class="second"><svg xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                          width="96.124px" height="96.123px" viewBox="0 0 96.124 96.123"
+                          style="enable-background:new 0 0 96.124 96.123;" xml:space="preserve"
+                          class="svg replaced-svg">
+                          <g>
+                            <path
+                              d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803   c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654   c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246   c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z">
+                            </path>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                        </svg></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="first"><svg xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                          viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"
+                          class="svg replaced-svg">
+                          <g>
+                            <g>
+                              <path
+                                d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016    c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992    c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056    c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152    c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792    c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44    C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568    C480.224,136.96,497.728,118.496,512,97.248z">
+                              </path>
+                            </g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                        </svg></span>
+                      <span class="second"><svg xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                          viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"
+                          class="svg replaced-svg">
+                          <g>
+                            <g>
+                              <path
+                                d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016    c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992    c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056    c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152    c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792    c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44    C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568    C480.224,136.96,497.728,118.496,512,97.248z">
+                              </path>
+                            </g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                        </svg></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="first"><svg xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                          viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"
+                          width="512" height="512" class="svg replaced-svg">
+                          <g>
+                            <path
+                              d="M256,152c-57.9,0-105,47.1-105,105s47.1,105,105,105s105-47.1,105-105S313.9,152,256,152z M256,152   c-57.9,0-105,47.1-105,105s47.1,105,105,105s105-47.1,105-105S313.9,152,256,152z M437,0H75C33.6,0,0,33.6,0,75v362   c0,41.4,33.6,75,75,75h362c41.4,0,75-33.6,75-75V75C512,33.6,478.4,0,437,0z M256,392c-74.399,0-135-60.601-135-135   c0-74.401,60.601-135,135-135s135,60.599,135,135C391,331.399,330.399,392,256,392z M421,122c-16.5,0-30-13.5-30-30s13.5-30,30-30   s30,13.5,30,30S437.5,122,421,122z M256,152c-57.9,0-105,47.1-105,105s47.1,105,105,105s105-47.1,105-105S313.9,152,256,152z    M256,152c-57.9,0-105,47.1-105,105s47.1,105,105,105s105-47.1,105-105S313.9,152,256,152z M256,152c-57.9,0-105,47.1-105,105   s47.1,105,105,105s105-47.1,105-105S313.9,152,256,152z">
+                            </path>
+                          </g>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </svg></span>
+                      <span class="second"><svg xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                          viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"
+                          width="512" height="512" class="svg replaced-svg">
+                          <g>
+                            <path
+                              d="M256,152c-57.9,0-105,47.1-105,105s47.1,105,105,105s105-47.1,105-105S313.9,152,256,152z M256,152   c-57.9,0-105,47.1-105,105s47.1,105,105,105s105-47.1,105-105S313.9,152,256,152z M437,0H75C33.6,0,0,33.6,0,75v362   c0,41.4,33.6,75,75,75h362c41.4,0,75-33.6,75-75V75C512,33.6,478.4,0,437,0z M256,392c-74.399,0-135-60.601-135-135   c0-74.401,60.601-135,135-135s135,60.599,135,135C391,331.399,330.399,392,256,392z M421,122c-16.5,0-30-13.5-30-30s13.5-30,30-30   s30,13.5,30,30S437.5,122,421,122z M256,152c-57.9,0-105,47.1-105,105s47.1,105,105,105s105-47.1,105-105S313.9,152,256,152z    M256,152c-57.9,0-105,47.1-105,105s47.1,105,105,105s105-47.1,105-105S313.9,152,256,152z M256,152c-57.9,0-105,47.1-105,105   s47.1,105,105,105s105-47.1,105-105S313.9,152,256,152z">
+                            </path>
+                          </g>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </svg></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="first"><svg xmlns="http://www.w3.org/2000/svg" id="Bold"
+                          enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512"
+                          class="svg replaced-svg">
+                          <path
+                            d="m20.25 11c-.267 0-.529.029-.782.082-.337-3.409-3.222-6.082-6.718-6.082-.414 0-.75.336-.75.75v12c0 .414.336.75.75.75h7.5c2.069 0 3.75-1.681 3.75-3.75 0-2.067-1.681-3.75-3.75-3.75z">
+                          </path>
+                          <path
+                            d="m9 7.25v10.5c0 .414.336.75.75.75s.75-.336.75-.75v-10.5c0-.414-.336-.75-.75-.75s-.75.336-.75.75z">
+                          </path>
+                          <path
+                            d="m6 10.25v7.5c0 .414.336.75.75.75s.75-.336.75-.75v-7.5c0-.414-.336-.75-.75-.75s-.75.336-.75.75z">
+                          </path>
+                          <path
+                            d="m3 17.75c0 .414.336.75.75.75s.75-.336.75-.75v-7.5c0-.414-.336-.75-.75-.75s-.75.336-.75.75z">
+                          </path>
+                          <path
+                            d="m.75 18.5c.414 0 .75-.336.75-.75v-4.5c0-.414-.336-.75-.75-.75s-.75.336-.75.75v4.5c0 .414.336.75.75.75z">
+                          </path>
+                        </svg></span>
+                      <span class="second"><svg xmlns="http://www.w3.org/2000/svg" id="Bold"
+                          enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512"
+                          class="svg replaced-svg">
+                          <path
+                            d="m20.25 11c-.267 0-.529.029-.782.082-.337-3.409-3.222-6.082-6.718-6.082-.414 0-.75.336-.75.75v12c0 .414.336.75.75.75h7.5c2.069 0 3.75-1.681 3.75-3.75 0-2.067-1.681-3.75-3.75-3.75z">
+                          </path>
+                          <path
+                            d="m9 7.25v10.5c0 .414.336.75.75.75s.75-.336.75-.75v-10.5c0-.414-.336-.75-.75-.75s-.75.336-.75.75z">
+                          </path>
+                          <path
+                            d="m6 10.25v7.5c0 .414.336.75.75.75s.75-.336.75-.75v-7.5c0-.414-.336-.75-.75-.75s-.75.336-.75.75z">
+                          </path>
+                          <path
+                            d="m3 17.75c0 .414.336.75.75.75s.75-.336.75-.75v-7.5c0-.414-.336-.75-.75-.75s-.75.336-.75.75z">
+                          </path>
+                          <path
+                            d="m.75 18.5c.414 0 .75-.336.75-.75v-4.5c0-.414-.336-.75-.75-.75s-.75.336-.75.75v4.5c0 .414.336.75.75.75z">
+                          </path>
+                        </svg></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="first"><svg xmlns="http://www.w3.org/2000/svg" height="682pt"
+                          viewBox="-21 -117 682.66672 682" width="682pt" class="svg replaced-svg">
+                          <path
+                            d="m626.8125 64.035156c-7.375-27.417968-28.992188-49.03125-56.40625-56.414062-50.082031-13.703125-250.414062-13.703125-250.414062-13.703125s-200.324219 0-250.40625 13.183593c-26.886719 7.375-49.03125 29.519532-56.40625 56.933594-13.179688 50.078125-13.179688 153.933594-13.179688 153.933594s0 104.378906 13.179688 153.933594c7.382812 27.414062 28.992187 49.027344 56.410156 56.410156 50.605468 13.707031 250.410156 13.707031 250.410156 13.707031s200.324219 0 250.40625-13.183593c27.417969-7.378907 49.03125-28.992188 56.414062-56.40625 13.175782-50.082032 13.175782-153.933594 13.175782-153.933594s.527344-104.382813-13.183594-154.460938zm-370.601562 249.878906v-191.890624l166.585937 95.945312zm0 0">
+                          </path>
+                        </svg></span>
+                      <span class="second"><svg xmlns="http://www.w3.org/2000/svg" height="682pt"
+                          viewBox="-21 -117 682.66672 682" width="682pt" class="svg replaced-svg">
+                          <path
+                            d="m626.8125 64.035156c-7.375-27.417968-28.992188-49.03125-56.40625-56.414062-50.082031-13.703125-250.414062-13.703125-250.414062-13.703125s-200.324219 0-250.40625 13.183593c-26.886719 7.375-49.03125 29.519532-56.40625 56.933594-13.179688 50.078125-13.179688 153.933594-13.179688 153.933594s0 104.378906 13.179688 153.933594c7.382812 27.414062 28.992187 49.027344 56.410156 56.410156 50.605468 13.707031 250.410156 13.707031 250.410156 13.707031s200.324219 0 250.40625-13.183593c27.417969-7.378907 49.03125-28.992188 56.414062-56.40625 13.175782-50.082032 13.175782-153.933594 13.175782-153.933594s.527344-104.382813-13.183594-154.460938zm-370.601562 249.878906v-191.890624l166.585937 95.945312zm0 0">
+                          </path>
+                        </svg></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="first"><svg xmlns="http://www.w3.org/2000/svg" id="Bold"
+                          enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512"
+                          class="svg replaced-svg">
+                          <path
+                            d="m19.915 13.028c-.388-.49-.277-.708 0-1.146.005-.005 3.208-4.431 3.538-5.932l.002-.001c.164-.547 0-.949-.793-.949h-2.624c-.668 0-.976.345-1.141.731 0 0-1.336 3.198-3.226 5.271-.61.599-.892.791-1.225.791-.164 0-.419-.192-.419-.739v-5.105c0-.656-.187-.949-.74-.949h-4.126c-.419 0-.668.306-.668.591 0 .622.945.765 1.043 2.515v3.797c0 .832-.151.985-.486.985-.892 0-3.057-3.211-4.34-6.886-.259-.713-.512-1.001-1.185-1.001h-2.625c-.749 0-.9.345-.9.731 0 .682.892 4.073 4.148 8.553 2.17 3.058 5.226 4.715 8.006 4.715 1.671 0 1.875-.368 1.875-1.001 0-2.922-.151-3.198.686-3.198.388 0 1.056.192 2.616 1.667 1.783 1.749 2.076 2.532 3.074 2.532h2.624c.748 0 1.127-.368.909-1.094-.499-1.527-3.871-4.668-4.023-4.878z">
+                          </path>
+                        </svg></span>
+                      <span class="second"><svg xmlns="http://www.w3.org/2000/svg" id="Bold"
+                          enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512"
+                          class="svg replaced-svg">
+                          <path
+                            d="m19.915 13.028c-.388-.49-.277-.708 0-1.146.005-.005 3.208-4.431 3.538-5.932l.002-.001c.164-.547 0-.949-.793-.949h-2.624c-.668 0-.976.345-1.141.731 0 0-1.336 3.198-3.226 5.271-.61.599-.892.791-1.225.791-.164 0-.419-.192-.419-.739v-5.105c0-.656-.187-.949-.74-.949h-4.126c-.419 0-.668.306-.668.591 0 .622.945.765 1.043 2.515v3.797c0 .832-.151.985-.486.985-.892 0-3.057-3.211-4.34-6.886-.259-.713-.512-1.001-1.185-1.001h-2.625c-.749 0-.9.345-.9.731 0 .682.892 4.073 4.148 8.553 2.17 3.058 5.226 4.715 8.006 4.715 1.671 0 1.875-.368 1.875-1.001 0-2.922-.151-3.198.686-3.198.388 0 1.056.192 2.616 1.667 1.783 1.749 2.076 2.532 3.074 2.532h2.624c.748 0 1.127-.368.909-1.094-.499-1.527-3.871-4.668-4.023-4.878z">
+                          </path>
+                        </svg></span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="mouse-cursor cursor-outer" style="visibility: visible; transform: translate(288px, 29px);"></div>
+    <div class="mouse-cursor cursor-inner" style="visibility: visible; transform: translate(288px, 29px);"></div>
+
+  </div>
+
+
+  <script src="js/jquery.js"></script>
+  <!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->
+  <script src="js/plugins.js"></script>
+  <script async="" defer=""
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5bpEs3xlB8vhxNFErwoo3MXR64uavf6Y&amp;callback=initMap"></script>
+  <script src="js/init.js"></script>
+
+
+  <div style="display: none" class="ubey-RecordingScreen-count-down ubey-RecordingScreen-count-down-container">
+    <style>
+      .ubey-RecordingScreen-count-down-container {
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        z-index: 9999999999999;
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+
+      .ubey-RecordingScreen-count-down-content {
+        position: absolute;
+        display: flex;
+        top: 50%;
+        left: 50%;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        height: 15em;
+        width: 15em;
+        transform: translate(-50%, -100%);
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 50%;
+      }
+
+      #ubey-RecordingScreen-count-count {
+        font-size: 14em;
+        transform: translateY(-2%);
+      }
+    </style>
+    <div class="ubey-RecordingScreen-count-down-content">
+      <span id="ubey-RecordingScreen-count-count"></span>
+    </div>
+  </div>
+  <script>
+    function returnCommentSymbol(language = "javascript") {
+      const languageObject = {
+        bat: "@REM",
+        c: "//",
+        csharp: "//",
+        cpp: "//",
+        closure: ";;",
+        coffeescript: "#",
+        dockercompose: "#",
+        css: "/*DELIMITER*/",
+        "cuda-cpp": "//",
+        dart: "//",
+        diff: "#",
+        dockerfile: "#",
+        fsharp: "//",
+        "git-commit": "//",
+        "git-rebase": "#",
+        go: "//",
+        groovy: "//",
+        handlebars: "{{!--DELIMITER--}}",
+        hlsl: "//",
+        html: "<!--DELIMITER-->",
+        ignore: "#",
+        ini: ";",
+        java: "//",
+        javascript: "//",
+        javascriptreact: "//",
+        json: "//",
+        jsonc: "//",
+        julia: "#",
+        latex: "%",
+        less: "//",
+        lua: "--",
+        makefile: "#",
+        markdown: "<!--DELIMITER-->",
+        "objective-c": "//",
+        "objective-cpp": "//",
+        perl: "#",
+        perl6: "#",
+        php: "<!--DELIMITER-->",
+        powershell: "#",
+        properties: ";",
+        jade: "//-",
+        python: "#",
+        r: "#",
+        razor: "<!--DELIMITER-->",
+        restructuredtext: "..",
+        ruby: "#",
+        rust: "//",
+        scss: "//",
+        shaderlab: "//",
+        shellscript: "#",
+        sql: "--",
+        svg: "<!--DELIMITER-->",
+        swift: "//",
+        tex: "%",
+        typescript: "//",
+        typescriptreact: "//",
+        vb: "'",
+        xml: "<!--DELIMITER-->",
+        xsl: "<!--DELIMITER-->",
+        yaml: "#"
+      }
+      if (!languageObject[language]) {
+        return languageObject["python"].split("DELIMITER")
+      }
+      return languageObject[language].split("DELIMITER")
+    }
+    var savedChPos = 0
+    var returnedSuggestion = ''
+    let editor, doc, cursor, line, pos
+    pos = { line: 0, ch: 0 }
+    var suggestionsStatus = false
+    var docLang = "python"
+    var suggestionDisplayed = false
+    var isReturningSuggestion = false
+    document.addEventListener("keydown", (event) => {
+      setTimeout(() => {
+        editor = event.target.closest('.CodeMirror');
+        if (editor) {
+          const codeEditor = editor.CodeMirror
+          if (!editor.classList.contains("added-tab-function")) {
+            editor.classList.add("added-tab-function")
+            codeEditor.removeKeyMap("Tab")
+            codeEditor.setOption("extraKeys", {
+              Tab: (cm) => {
+
+                if (returnedSuggestion) {
+                  acceptTab(returnedSuggestion)
+                }
+                else {
+                  cm.execCommand("defaultTab")
+                }
+              }
+            })
+          }
+          doc = editor.CodeMirror.getDoc()
+          cursor = doc.getCursor()
+          line = doc.getLine(cursor.line)
+          pos = { line: cursor.line, ch: line.length }
+
+          if (cursor.ch > 0) {
+            savedChPos = cursor.ch
+          }
+
+          const fileLang = doc.getMode().name
+          docLang = fileLang
+          const commentSymbol = returnCommentSymbol(fileLang)
+          if (event.key == "?") {
+            var lastLine = line
+            lastLine = lastLine.slice(0, savedChPos - 1)
+
+            if (lastLine.trim().startsWith(commentSymbol[0])) {
+              if (fileLang !== "null") {
+                lastLine += " " + fileLang
+              }
+
+              lastLine = lastLine.split(commentSymbol[0])[1]
+              window.postMessage({ source: 'getQuery', payload: { data: lastLine } })
+              isReturningSuggestion = true
+              displayGrey("\nBlackbox loading...")
+            }
+          } else if (event.key === "Enter" && suggestionsStatus && !isReturningSuggestion) {
+            var query = doc.getRange({ line: Math.max(0, cursor.line - 50), ch: 0 }, { line: cursor.line, ch: line.length })
+            window.postMessage({ source: 'getSuggestion', payload: { data: query, language: docLang, cursorPos: pos } })
+            displayGrey("Blackbox loading...")
+          } else if (event.key === "ArrowRight" && returnedSuggestion) {
+            acceptTab(returnedSuggestion)
+          } else if (event.key === "Enter" && isReturningSuggestion) {
+            displayGrey("\nBlackbox loading...")
+          } else if (event.key === "Escape") {
+            displayGrey("")
+          }
+        }
+      }, 0)
+    })
+
+    function acceptTab(text) {
+      if (suggestionDisplayed) {
+        displayGrey("")
+        doc.replaceRange(text, pos)
+        returnedSuggestion = ""
+        updateSuggestionStatus(false)
+      }
+    }
+    function acceptSuggestion(text) {
+      displayGrey("")
+      doc.replaceRange(text, pos)
+      returnedSuggestion = ""
+      updateSuggestionStatus(false)
+    }
+    function displayGrey(text) {
+      if (!text) {
+        document.querySelector(".blackbox-suggestion").remove()
+        return
+      }
+      var el = document.querySelector(".blackbox-suggestion")
+      if (!el) {
+        el = document.createElement('span')
+        el.classList.add("blackbox-suggestion")
+        el.style = 'color:grey'
+        el.innerText = text
+      }
+      else {
+        el.innerText = text
+      }
+
+      var lineIndex = pos.line;
+      editor.getElementsByClassName('CodeMirror-line')[lineIndex].appendChild(el)
+    }
+    function updateSuggestionStatus(s) {
+      suggestionDisplayed = s
+      window.postMessage({ source: 'updateSuggestionStatus', status: suggestionDisplayed, suggestion: returnedSuggestion })
+    }
+    window.addEventListener('message', (event) => {
+      if (event.source !== window) return
+      if (event.data.source == 'return') {
+        isReturningSuggestion = false
+        const formattedCode = formatCode(event.data.payload.data)
+        returnedSuggestion = formattedCode
+        displayGrey(formattedCode)
+        updateSuggestionStatus(true)
+      }
+      if (event.data.source == 'suggestReturn') {
+        const prePos = event.data.payload.cursorPos
+        if (pos.line == prePos.line && pos.ch == prePos.ch) {
+          returnedSuggestion = event.data.payload.data
+          displayGrey(event.data.payload.data)
+          updateSuggestionStatus(true)
+        }
+        else {
+          displayGrey()
+        }
+      }
+      if (event.data.source == 'codeSearchReturn') {
+        isReturningSuggestion = false
+        displayGrey()
+      }
+      if (event.data.source == 'suggestionsStatus') {
+        suggestionsStatus = event.data.payload.enabled
+      }
+      if (event.data.source == 'acceptSuggestion') {
+
+        acceptSuggestion(event.data.suggestion)
+      }
+    })
+    document.addEventListener("keyup", function () {
+      returnedSuggestion = ""
+      updateSuggestionStatus(false)
+    })
+    function formatCode(data) {
+      if (Array.isArray(data)) {
+        var finalCode = ""
+        var pairs = []
+
+        const commentSymbol = returnCommentSymbol(docLang)
+        data.forEach((codeArr, idx) => {
+          const code = codeArr[0]
+          var desc = codeArr[1]
+          const descArr = desc.split("\n")
+          var finalDesc = ""
+          descArr.forEach((descLine, idx) => {
+            const whiteSpace = descLine.search(/\S/)
+            if (commentSymbol.length < 2 || idx === 0) {
+              finalDesc += insert(descLine, whiteSpace, commentSymbol[0])
+            }
+            if (commentSymbol.length > 1 && idx === descArr.length - 1) {
+              finalDesc = finalDesc + commentSymbol[1] + "\n"
+            }
+          })
+
+          finalCode += finalDesc + "\n\n" + code
+          pairs.push(finalCode)
+        })
+        return "\n" + pairs.join("\n")
+      }
+
+      return "\n" + data
+    }
+
+    function insert(str, index, value) {
+      return str.substr(0, index) + value + str.substr(index)
+    }
+  </script>
+</body>
+
+</html>
